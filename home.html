@@ -2,6 +2,7 @@
   <head>
     <title>qeb speaks</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
 
   <body>
@@ -14,6 +15,14 @@
         </center>
       </h1> 
     </div>
+
+    <div id="nav-placeholder"></div>
+    
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("nav.html");
+      });
+    </script>
 
     <div id="sidebar">
       <a href="about.html">
