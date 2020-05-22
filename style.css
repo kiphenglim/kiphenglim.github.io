@@ -5,21 +5,18 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-li a {
-  list-style-type: none;
-  margin: 0;
-  padding: 1%;
   width: 16%;
   position: fixed; /* Make it stick, even on scroll */
   overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  list-style-type: none;
+}
+
+li a {
+  margin: 0;
+  padding: 1%;
   font-family: Helvetica;
   text-decoration: none;
   display: block;
-}
-
-li a:link, a:visited {
   background-color: gold;
   color: black;
 }
