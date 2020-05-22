@@ -12,8 +12,8 @@ ul {
 }
 
 li a {
-  margin: 0;
-  padding: 1%;
+  margin: 5px;
+  padding: 3% 5%;
   font-family: Helvetica;
   text-decoration: none;
   display: block;
@@ -21,7 +21,7 @@ li a {
   color: black;
 }
 
-li a:hover, a:active{
+li a:hover, .active{
   background-color: black;
   color: gold;
 }
