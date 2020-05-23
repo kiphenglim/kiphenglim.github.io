@@ -1,5 +1,49 @@
-/* SIDENAV */
-ul {
+
+
+/* GENERAL LINKS */
+a {color: lightgray;}
+
+/* BODY AND FONT */
+body {background: black; color: #ffffff; margin: 0; padding: 0;} 
+@font-face {font-family: lexendExa; src: url(LexendExa-regular.ttf) ; font-style: normal;} 
+
+/* CONTAINER FORMATTING */
+#container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 0, 75);
+}
+
+/* HEADER FORMATTING */
+#header {
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  padding: 0;
+  border: 0;
+  background: gold;
+}
+#header h1 {
+  font-family: lexendExa;
+  font-size: 48px;
+  color: #000000;
+  margin: 0;
+  padding: 20px;
+}    
+
+/* NAV FORMATTING */
+#nav {
+  width: 18%;
+  height: 75%;
+  margin: 0;
+  padding: 1%;
+  border: 0;
+  float: left;
+  background: rgb(0, 0, 75);
+}
+
+#nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -8,7 +52,7 @@ ul {
   list-style-type: none;
 }
 
-li a {
+#nav li a {
   margin: 5px;
   padding: 3% 5%;
   font-family: lexendExa;
@@ -18,36 +62,46 @@ li a {
   color: black;
 }
 
-li a:hover, .active{
+#nav li a:hover, .active{
   background-color: black;
   color: gold;
 }
 
-/* GENERAL LINKS */
-a {color: lightgray;}
+/* CONTENT FORMATTING */
+#content {
+  width: 78%;
+  height: 75%;
+  overflow: auto;
+  margin: 0;
+  padding: 1%;
+  border: 0; float:
+  right;
+  background: rgb(0, 0, 75);
+}
 
-/* BODY AND FONT */
-body {background: #ffffff; color: #ffffff; margin: 0; padding: 0;} 
-@font-face {font-family: lexendExa; src: url(LexendExa-regular.ttf) ; font-style: normal;} 
-
-/* DIV FORMATTING */
-#container {width: 100%; margin: 0; padding: 0; background: rgb(0, 0, 75);}
-
-#header {width: 100%; height: 100px; margin: auto; padding: 0; border: 0; background: gold;} 
-#header h1 {font-family: lexendExa; font-size: 48px; color: #000000; margin: 0; padding: 20px;}    
-
-#nav {width: 18%; height: 80%; margin: 0; padding: 1%; border: 0; float: left; background: rgb(0, 0, 75);}
-
-
-#content {width: 78%; height: 80%; overflow: auto; margin: 0; padding: 1%; border: 0; float: right; background: rgb(0, 0, 75);}
 #content p {font-family: lexendExa; font-size: 16px; color: white}           
 
-#blogPrev {width: 50%; height: auto; margin: auto; padding: 0% 5%; background: black; clear: left;}
-#blogNext {width: 50%; height: auto; margin: auto; padding: 0% 5%; background: black; clear: right;}
+/* BLOG NAV FORMATTING */
+#blogPrev {
+  width: 10%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+#blogNext {
+  width: 10%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
 
 #blogPrev a {
   font-family: lexendexa;
   text-decoration: none;
+  text-align: center;
   display: block;
   background-color: gold;
   color: black;
@@ -56,9 +110,19 @@ body {background: #ffffff; color: #ffffff; margin: 0; padding: 0;}
 #blogNext a {
   font-family: lexendexa;
   text-decoration: none;
+  text-align: center;
   display: block;
   background-color: gold;
   color: black;
 }
 
-#footer {width: 98%; height: auto; margin: auto; padding: 1%; border: 0; background: rgb(0, 0, 75); clear:both;}
+/* FOOTER FORMATTING */
+#footer {
+  width: 98%;
+  height: auto;
+  margin: auto;
+  padding: 1%;
+  border: 0;
+  background: rgb(0, 0, 75);
+  clear:both;
+}
