@@ -64,7 +64,7 @@ body {
 
 #nav li a {
   margin: 5px;
-  padding: 3% 5%;
+  padding: 10px 15px;
   font-family: lexendExa;
   text-decoration: none;
   display: block;
@@ -80,7 +80,7 @@ body {
 /* CONTENT FORMATTING */
 #content {
   width: 78%;
-  height: 75%;
+  height: 80%;
   overflow: auto;
   margin: 0;
   padding: 1%;
@@ -105,7 +105,7 @@ body {
 
 #content li a {
   margin: 0;
-  padding: 1% 1%;
+  padding: 10px;
   font-family: lexendExa;
   text-decoration: none;
   display: block;
