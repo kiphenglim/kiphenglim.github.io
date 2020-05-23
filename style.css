@@ -1,11 +1,21 @@
-
-
 /* GENERAL LINKS */
 a {color: lightgray;}
 
 /* BODY AND FONT */
-body {background: black; color: #ffffff; margin: 0; padding: 0;} 
-@font-face {font-family: lexendExa; src: url(LexendExa-regular.ttf) ; font-style: normal;} 
+@font-face {
+  font-family: lexendExa;
+  src: url(LexendExa-regular.ttf) ;
+  font-style: normal;
+}
+
+body {
+  background: black;
+  color: #ffffff;
+  font-family: lexendExa;
+  font-size: medium;
+  margin: 0;
+  padding: 0;
+}
 
 /* CONTAINER FORMATTING */
 #container {
@@ -79,7 +89,34 @@ body {background: black; color: #ffffff; margin: 0; padding: 0;}
   background: rgb(0, 0, 75);
 }
 
-#content p {font-family: lexendExa; font-size: 16px; color: white}           
+#content p {
+  font-family: lexendExa;
+  font-size: medium;
+  color: white}  
+
+#content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: auto;
+  list-style-type: none;
+}
+
+#content li a {
+  margin: 0;
+  padding: 1% 1%;
+  font-family: lexendExa;
+  text-decoration: none;
+  display: block;
+  background-color: gold;
+  color: black;
+}
+
+#content li a:hover{
+  background-color: black;
+  color: gold;
+}
 
 /* BLOG NAV FORMATTING */
 #blogPrev {
