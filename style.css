@@ -124,7 +124,7 @@ body {
   height: 70%;
   overflow: auto;
   margin: 0;
-  padding: 1%;
+  padding: 10px;
   border: 0; 
   float:right;
   background: rgb(0, 0, 75);
