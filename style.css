@@ -42,4 +42,23 @@ body {background: #ffffff; color: #ffffff; margin: 0; padding: 0;}
 #content {width: 78%; height: 80%; overflow: auto; margin: 0; padding: 1%; border: 0; float: right; background: rgb(0, 0, 75);}
 #content p {font-family: lexendExa; font-size: 16px; color: white}           
 
+#blogPrev {width: 50%; height: auto; margin: auto; padding: 0% 5%; background: black; clear: left;}
+#blogNext {width: 50%; height: auto; margin: auto; padding: 0% 5%; background: black; clear: right;}
+
+#blogPrev a {
+  font-family: lexendexa;
+  text-decoration: none;
+  display: block;
+  background-color: gold;
+  color: black;
+}
+
+#blogNext a {
+  font-family: lexendexa;
+  text-decoration: none;
+  display: block;
+  background-color: gold;
+  color: black;
+}
+
 #footer {width: 98%; height: auto; margin: auto; padding: 1%; border: 0; background: rgb(0, 0, 75); clear:both;}
