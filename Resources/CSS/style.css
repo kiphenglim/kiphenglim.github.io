@@ -4,13 +4,13 @@ a {color: lightgray;}
 /* BODY AND FONT */
 @font-face {
   font-family: lexendDeca;
-  src: url(Fonts/LexendDeca-regular.ttf) ;
+  src: url(../Fonts/LexendDeca-regular.ttf) ;
   font-style: normal;
 }
 
 @font-face {
   font-family: lexendExa;
-  src: url(Fonts/LexendExa-regular.ttf) ;
+  src: url(../Fonts/LexendExa-Regular.ttf) ;
   font-style: normal;
 }
 
