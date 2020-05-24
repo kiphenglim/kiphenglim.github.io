@@ -85,7 +85,7 @@ body {
 
 /* CONTENT FORMATTING */
 #content {
-  width: 78%;
+  width: 75%;
   height: 80%;
   overflow: auto;
   margin: 0;
@@ -126,7 +126,7 @@ body {
 
 /* ARTICLE FORMATTING*/
 #article {
-  width: 78%;
+  width: 75%;
   height: 70%;
   overflow: auto;
   margin: 0;
