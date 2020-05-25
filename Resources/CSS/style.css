@@ -10,7 +10,7 @@ a {color: lightgray;}
 
 @font-face {
   font-family: lexendDeca;
-  src: url(https://github.com/kiphenglim/SM20-Portfolio/blob/master/Resources/Fonts/LexendDeca-Regular.ttf) ;
+  src: url(/Resources/Fonts/LexendDeca-Regular.ttf) ;
   font-style: normal;
 }
 
