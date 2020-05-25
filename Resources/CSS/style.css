@@ -9,6 +9,12 @@ a {color: lightgray;}
 }
 
 @font-face {
+  font-family: lexendDeca;
+  src: url(../SM20-Portfolio/Fonts/LexendDeca-regular.ttf) ;
+  font-style: normal;
+}
+
+@font-face {
   font-family: lexendExa;
   src: url(../Fonts/LexendExa-Regular.ttf) ;
   font-style: normal;
