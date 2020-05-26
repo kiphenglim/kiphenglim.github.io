@@ -9,41 +9,41 @@
   </head>
 
   <body>
-    <div class="container-fluid" style="padding: 0; float: none;">
-      <!-- NAV BAR -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Kip Lim</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Blog Posts/index.html">Blog</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Kip Lim</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Blog Posts/index.html">Blog</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
+    <div class="container-fluid" style="padding: 0; float: none; overflow:hidden; height: max-content;">
       <!-- IMAGE BACKGROUND AND PAGE CONTENT -->
-      <div class="card bg-dark" style="overflow: hidden; height: max-content; width: 100vw;">
-        <img src="Resources/Images/sf_background.JPG"  class="card-img" alt="..." style="overflow: hidden; margin: auto; width: 100vw;";>
+      <div class="card bg-dark" style="overflow: hidden;">
+        <img src="Resources/Images/sf_background.JPG"  class="card-img" alt="..." style="text-align: center; overflow: hidden;";>
         <div class="card-img-overlay" style="height: inherit;">
             <div class="d-flex flex-column flex-grow-1 justify-content-center align-items-center" style="overflow:hidden; height: 100%">
               <center>
@@ -63,15 +63,21 @@
         <div class="card bg-secondary">
           <div class="card-body text-center">
             <h5 class="card-title">Languages</h5>
-            <ul class="card-text" style="list-style-type: none;">
-              <li>Java</li>
-              <li>Python</li>
-              <li>C++</li>
-              <li>Ruby</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>R</li>
-            </ul>
+            <p class="card-text">
+              Java
+              <br>
+              Python
+              <br>
+              C++
+              <br>
+              Ruby
+              <br>
+              HTML
+              <br>
+              CSS
+              <br>
+              R
+            </p>
           </div>
         </div>
 
@@ -114,23 +120,25 @@
         <div class="card bg-secondary">
           <div class="card-body text-center">
             <h5 class="card-title">Dev Tools</h5>
-            <ul class="card-text" style="list-style-type: none;">
-              <li>VS Code</li>
-              <li>Eclipse</li>
-              <li>Ruby on Rails</li>
-              <li>RStudio</li>
-              <li>Docker</li>
-            </ul>
+            <p class="card-text">
+              VS Code
+              <br>
+              Github
+              <br>
+              Eclipse
+              <br>
+              Ruby on Rails
+              <br>
+              RStudio
+              <br>
+              Docker
+            </p>
           </div>
         </div>
 
         <div class="card p-3 text-right bg-secondary">
           <blockquote class="blockquote mb-0">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">
-              <small class="text-muted">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </small>
             </footer>
           </blockquote>
         </div>
