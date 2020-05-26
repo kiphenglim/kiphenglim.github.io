@@ -9,143 +9,155 @@
   </head>
 
   <body>
-    <!-- NAV BAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Kip Lim</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Blog Posts/index.html">Blog</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="container-fluid" style="padding: 0; float: none; overflow: hidden; max-height:max-content; max-width: max-content;">
 
-    <div class="container-fluid" style="padding: 0; float: none; overflow:hidden; height: max-content;">
-      <!-- IMAGE BACKGROUND AND PAGE CONTENT -->
-      <div class="card bg-dark" style="overflow: hidden;">
-        <img src="Resources/Images/sf_background.JPG"  class="card-img" alt="..." style="text-align: center; overflow: hidden;";>
-        <div class="card-img-overlay" style="height: inherit;">
-            <div class="d-flex flex-column flex-grow-1 justify-content-center align-items-center" style="overflow:hidden; height: 100%">
+      <!-- NAV BAR -->
+      <div class="container-fluid" style="padding: 0; float: none; overflow: hidden; max-width: auto;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <!-- Brand -->
+          <a class="navbar-brand" href="#">Kip Lim</a>
+
+          <!-- Collapse on small window -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Blog Posts/index.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="container-fluid" style="padding: 0; float: none; overflow:hidden; height: max-content;">
+        <!-- IMAGE BACKGROUND AND INTRO CARD -->
+        <div class="card bg-dark" style="overflow: hidden;">
+          <img src="Resources/Images/sf_background.JPG"  class="card-img" alt="..." style="text-align: center; overflow: hidden;";>
+          <div class="card-img-overlay" style="height: inherit;">
+              <div class="d-flex flex-column flex-grow-1 justify-content-center align-items-center" style="overflow:hidden; height: 100%">
+                <center>
+                  <h3 style="display: flexbox; padding: 25px; background: rgba(0, 0, 0, 0.7)">
+                    Hello, I'm <span class="text-info">Kip Lim</span>.
+                    <br>
+                    aspiring swe // web developer
+                  </h3>
+                </center>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container" style="padding: 0; margin-top: 2vh; float: none;">
+        <!-- BOTTOM OF PAGE CARD COLUMNS -->
+        <div class="card-columns">
+          
+          <div class="card bg-secondary">
+            <div class="card-body text-center">
+              <h5 class="card-title">Languages</h5>
               <center>
-                <h3 style="display: flexbox; padding: 25px; background: rgba(0, 0, 0, 0.7)">
-                  Hello, I'm <span class="text-info">Kip Lim</span>.
-                  <br>
-                  aspiring swe // web developer
-                </h3>
+                <table class="table-sm table-borderless text-white">
+                  <tbody style="text-align: center;">
+                    <tr>
+                      <td>Java</td>
+                      <td>Python</td>
+                    </tr>
+                    <tr>
+                      <td>C++</td>
+                      <td>HTML</td>
+                    </tr>
+                    <tr>
+                      <td>CSS</td>
+                      <td>Ruby</td>
+                    </tr>
+                  </tbody>
+                </table>
               </center>
             </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container" style="padding: 0; margin-top: 2vh; float: none;">
-      <div class="card-columns">
-        <div class="card bg-secondary">
-          <div class="card-body text-center">
-            <h4 class="card-title">Languages</h4>
-            
-            <table class="table table-borderless text-white">
-              <tbody style="text-align: center;">
-                <tr>
-                  <td>Java</td>
-                  <td>Python</td>
-                </tr>
-                <tr>
-                  <td>C++</td>
-                  <td>HTML</td>
-                </tr>
-                <tr>
-                  <td>CSS</td>
-                  <td>Ruby</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
-        </div>
 
-        <div class="card p-3 bg-secondary">
-          <blockquote class="blockquote mb-0 card-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">
-              <small class="text-muted">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </small>
-            </footer>
-          </blockquote>
-        </div>
-
-        <div class="card bg-secondary">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <div class="card p-3 bg-secondary">
+            <blockquote class="blockquote mb-0 card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+              </footer>
+            </blockquote>
           </div>
-        </div>
 
-        <div class="card bg-info text-white text-center p-3">
-          <div class="card-body text-center">
-            <h4 class="card-text">
-              My life goal is to build things that people intuitively know how to use. I want people to step into the simple, into the beautiful, into the familiar.
-            </h4>
+          <div class="card bg-secondary">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="card text-center bg-secondary">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+          <div class="card bg-info text-white text-center p-3">
+            <div class="card-body text-center">
+              <h5 class="card-text">
+                My life goal is to build things that people intuitively know how to use. I want people to step into the simple, into the beautiful, into the familiar.
+              </h5>
+            </div>
           </div>
-        </div>
 
-        <div class="card bg-secondary">
-          <div class="card-body text-center">
-            <h5 class="card-title">Dev Tools</h5>
-            <p class="card-text">
-              VS Code
-              <br>
-              Github
-              <br>
-              Eclipse
-              <br>
-              Ruby on Rails
-              <br>
-              RStudio
-              <br>
-              Docker
-            </p>
+          <div class="card text-center bg-secondary">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="card p-3 text-right bg-secondary">
-          <blockquote class="blockquote mb-0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            </footer>
-          </blockquote>
-        </div>
+          <div class="card bg-secondary">
+            <div class="card-body text-center">
+              <h5 class="card-title">Dev Tools</h5>
+              <p class="card-text">
+                VS Code
+                <br>
+                Github
+                <br>
+                Eclipse
+                <br>
+                Ruby on Rails
+                <br>
+                RStudio
+                <br>
+                Docker
+              </p>
+            </div>
+          </div>
 
-        <div class="card bg-secondary">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+          <div class="card p-3 text-right bg-secondary">
+            <blockquote class="blockquote mb-0">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="card bg-secondary">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+            </div>
           </div>
         </div>
       </div>
