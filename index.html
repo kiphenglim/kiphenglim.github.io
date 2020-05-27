@@ -11,7 +11,7 @@
   <body>    
     <div class="container-fluid" style="padding: 0; float: none; overflow: hidden; max-height:max-content; max-width: max-content;">
 
-      <!-- NAV BAR -->
+      <!-- FLOATING NAV BAR -->
       <div class="container-fluid" style="padding: 0; overflow: hidden; max-width: max-content; max-height: max-content;">
         <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg">
           
@@ -51,7 +51,46 @@
         </nav>
       </div>
 
-      <div class="container-fluid" style="padding: 0; float: none; overflow:hidden; max-height:max-content; max-width:max-content"
+      <!-- SCROLLABLE NAV BAR -->
+      <div class="container-fluid" style="padding: 0; overflow: hidden; max-width: max-content; max-height: max-content;">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+          
+          <!-- MENU COLLAPSE -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- MENU ITEMS -->
+          <div class="collapse navbar-collapse nav-fill" id="navbarNavDropdown">
+            <ul class="navbar-nav flex-grow-1">
+              <li class="nav-item col">
+                <a class="nav-link text-light" href="#home">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item col">
+                <a class="nav-link text-light" href="#about">About</a>
+              </li>
+              <li class="nav-item col">
+                <a class="nav-link text-light" href="#">Resume</a>
+              </li>
+
+              <li class="nav-item col">
+                <a class="navbar-brand" style="padding-right: 0; padding-left: 0; margin: auto;" href="#">KIP LIM</a>
+              </li>
+
+              <li class="nav-item col">
+                <a class="nav-link text-light" href="#">Projects</a>
+              </li>
+              <li class="nav-item col">
+                <a class="nav-link text-light" href="Blog Posts/index.html">Blog</a>
+              </li>
+              <li class="nav-item col">
+                <a class="nav-link text-light" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
         <div class="container-fluid" style="padding: 0; float: none; overflow:hidden; max-height: max-content;">
           <!-- IMAGE BACKGROUND AND INTRO CARD -->
           <div id="home" class="card bg-dark" style="overflow: hidden;">
@@ -63,22 +102,24 @@
             <div class="card-img-overlay" style="height: inherit;">
                 <div class="d-flex flex-column flex-grow-1 justify-content-center align-items-center" style="overflow:hidden; height: 100%">
                   <center>
-                    <h2 style="display: flexbox; padding: 25px; background: rgba(0, 0, 0, 0.75)">
+                    <h3 class="d-block d-sm-block d-md-none" style="display: flexbox; padding: 25px; background: rgba(0, 0, 0, 0.75)">
+                      Hello, I'm <span class="text-info">Kip Lim</span>.
+                      <br>
+                      aspiring swe // web developer
+                    </h3>
+                  </center>
+
+                  <center>
+                    <h2 class="d-none d-sm-none d-md-block" style="display: flexbox; padding: 25px; background: rgba(0, 0, 0, 0.75)">
                       Hello, I'm <span class="text-info">Kip Lim</span>.
                       <br>
                       aspiring swe // web developer
                     </h2>
-
-                    <!-- <a class="btn bg-dark btn-outline-light" href="#about">
-                      &#8595; see what i am about &#8595;
-                    </a> -->
                   </center>
                 </div>
             </div>
           </div>
         </div>
-
-        
 
         <div class="container-fluid" style="padding: 3vw; float: none;">
           <!-- BOTTOM OF PAGE CARD DECK -->
@@ -204,7 +245,6 @@
             </div>
           </div>
         </div>
-      </div>
 
     </div>
   </div>
