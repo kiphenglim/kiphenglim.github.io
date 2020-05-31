@@ -12,7 +12,7 @@
     <div class="container-fluid" style="padding: 0; float: none; overflow: hidden; max-height:max-content; max-width: max-content;">
 
       <!-- FLOATING NAV BAR -->
-      <div class="container-fluid" style="padding: 0; overflow: hidden; max-width: max-content; max-height: max-content;">
+      <div id="floating-nav" class="container-fluid" style="padding: 0; overflow: hidden; max-width: max-content; max-height: max-content;">
         <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg">
           
           <!-- MENU COLLAPSE -->
@@ -124,94 +124,95 @@
       </div>
 
       <div class="container-fluid" style="padding: 3vw; float: none;">
-        <!-- BOTTOM OF PAGE CARD DECK -->
-        <div class="card-deck">
+        <div class="row">
+          <!-- BOTTOM OF PAGE CARD DECK -->
+          <div class="card-deck">
 
-          <!-- CARD: LANGUAGES -->
-          <div class="card bg-secondary">
-            <div class="card-body text-center">
-              <h5 class="card-title">Languages</h5>
-              <table class="table table-sm table-borderless text-white">
-                <tbody style="text-align: center;">
-                  <tr>
-                    <td>Java</td> <td>C++</td>
-                  </tr>
-                  <tr>
-                    <td>CSS</td> <td>HTML</td>
-                  </tr>
-                  <tr>
-                    <td>Python</td> <td>Ruby</td>
-                  </tr>
-                  <tr>
-                    <td>LaTeX</td> <td>R</td>
-                  </tr>
-                </tbody>
-              </table>
+            <!-- CARD: LANGUAGES -->
+            <div class="card bg-dark text-center my-auto">
+              <div class="card-body">
+                <h5 class="card-title">Languages</h5>
+                <table class="table table-sm table-borderless text-white">
+                  <tbody style="text-align: center;">
+                    <tr>
+                      <td>Java</td> <td>C++</td>
+                    </tr>
+                    <tr>
+                      <td>CSS</td> <td>HTML</td>
+                    </tr>
+                    <tr>
+                      <td>Python</td> <td>Ruby</td>
+                    </tr>
+                    <tr>
+                      <td>LaTeX</td> <td>R</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
 
-          <!-- CARD: LIFE GOALS -->
-          <div class="card bg-info text-white text-center p-3">
-            <div class="card-body text-center">
-              <h5 class="card-text">
-                My life goal is to build things that people intuitively know how to use. I want people to step into the simple, into the beautiful, into the familiar.
-              </h5>
+            <!-- CARD: LIFE GOALS -->
+            <div class="card bg-secondary text-white text-center my-auto p-3">
+              <div class="card-body">
+                <h5 class="card-text">
+                  My life goal is to build things that people intuitively know how to use. I want people to step into the simple, into the beautiful, into the familiar.
+                </h5>
+              </div>
             </div>
-          </div>
-
-          
-
-          <!-- CARD: DEVTOOLS -->
-          <div class="card bg-secondary">
-            <div class="card-body text-center">
-              <h5 class="card-title">Dev Tools</h5>
-              <table class="table table-sm table-borderless text-white">
-                <tbody style="text-align: center;">
-                  <tr>
-                    <td>VS Code</td> <td>Eclipse</td>
-                  </tr>
-                  <tr>
-                    <td>Bootstrap</td> <td>Git Bash</td>
-                  </tr>
-                  <tr>
-                    <td>Ruby/Rails</td> <td>Docker</td>
-                  </tr>
-                  <tr>
-                    <td>Overleaf</td> <td>RStudio</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ABOUT CONTENT -->
-      <div id="about" class="container-fluid" style="background-color: rgb(0, 0, 50); padding: 5vh; float: none; overflow: hidden;">
-        <div class="container" style="padding-bottom: 2vh; float: none; overflow: hidden;">
-          <h2 style="text-align: center">
-            ABOUT
-          </h2>
-        </div>
-
-        <!-- IMAGE ON TOP FOR SMALLER SCREENS -->
-        <div class="container-fluid">
-          <div class="media">
-            <!-- IMAGE ON SIDE FOR LARGER SCREENS -->
-            <img src="Resources/Images/pfp.jpg" class="rounded align-self-center mr-3 d-none d-sm-block d-md-block d-lg-block d-xl-block" style="max-height: 200px; max-width: 200px;" alt="A picture of Kip smiling. She is wearing a black shirt and aviator sunglasses.">
             
-            <div class="media-body" style="text-align: justify;">
-              <h5>
-                Kip Lim (she/they) is a junior Computer Science major at Harvey Mudd College. Doesn't quite know what to do career-wise yet, but likes working on cool things to pick up new skills. In fact, that's why this site was born: a desire to learn more about web design and what it takes to make your own site.
-              </h5>
-      
-              <h5>
-                Well-organised, perpetually curious, and tenacious problem solver with a surprising love of reading documentation. Interested in everything web: UX/UI, frontend, backend. Every project is an opportunity to grow.
-              </h5>
+
+            <!-- CARD: DEVTOOLS -->
+            <div class="card bg-dark text-center my-auto">
+              <div class="card-body">
+                <h5 class="card-title">Dev Tools</h5>
+                <table class="table table-sm table-borderless text-white">
+                  <tbody style="text-align: center;">
+                    <tr>
+                      <td>VS Code</td> <td>Eclipse</td>
+                    </tr>
+                    <tr>
+                      <td>Bootstrap</td> <td>Git Bash</td>
+                    </tr>
+                    <tr>
+                      <td>Ruby/Rails</td> <td>Docker</td>
+                    </tr>
+                    <tr>
+                      <td>Overleaf</td> <td>RStudio</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABOUT CONTENT -->
+        <div id="about" class="container-fluid" style="background-color: rgb(0, 0, 50); padding: 5vh; float: none; overflow: hidden;">
+          <div class="container" style="padding-bottom: 2vh; float: none; overflow: hidden;">
+            <h2 style="text-align: center">
+              ABOUT
+            </h2>
+          </div>
+
+          <!-- IMAGE ON TOP FOR SMALLER SCREENS -->
+          <div class="container-fluid">
+            <div class="media">
+              <!-- IMAGE ON SIDE FOR LARGER SCREENS -->
+              <img src="Resources/Images/pfp.jpg" class="rounded align-self-center mr-3 d-none d-sm-block d-md-block d-lg-block d-xl-block" style="max-height: 200px; max-width: 200px;" alt="A picture of Kip smiling. She is wearing a black shirt and aviator sunglasses.">
+              
+              <div class="media-body" style="text-align: justify;">
+                <h5>
+                  Kip Lim (she/they) is a junior Computer Science major at Harvey Mudd College. Doesn't quite know what to do career-wise yet, but likes working on cool things to pick up new skills. In fact, that's why this site was born: a desire to learn more about web design and what it takes to make your own site.
+                </h5>
         
-              <h5>
-                Likes: friends, food, and fun. Dislikes: slow walkers, bad color contrast, mansplaining.
-              </h5>
+                <h5>
+                  Well-organised, perpetually curious, and tenacious problem solver with a surprising love of reading documentation. Interested in everything web: UX/UI, frontend, backend. Every project is an opportunity to grow.
+                </h5>
+          
+                <h5>
+                  Likes: friends, food, and fun. Dislikes: slow walkers, bad color contrast, mansplaining.
+                </h5>
+              </div>
             </div>
           </div>
         </div>
