@@ -18,74 +18,112 @@
 </head>
 
 <body>
-  <div class="container-fliud" style="padding: 0; float: none; overflow: hidden; max-height: max-content; max-width: max-content;">
+  <div class="container-fluid" style="padding: 0; float: none; overflow: hidden; max-height: max-content; max-width: max-content;">
+    
+    <div class="container" style="float: none;">
+      <!-- FLOATING NAV BAR -->
+      <div id="floating-nav" class="container-fluid"
+        style="padding: 0; overflow: hidden; max-width: max-content; max-height: max-content;">
+        <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg">
 
-    <!-- FLOATING NAV BAR -->
-    <div id="floating-nav" class="container-fluid"
-      style="padding: 0; overflow: hidden; max-width: max-content; max-height: max-content;">
-      <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg">
+          <!-- MENU COLLAPSE -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <!-- MENU COLLAPSE -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <!-- MENU ITEMS -->
+          <div class="collapse navbar-collapse nav-fill" id="navbarNavDropdown">
+            <ul class="navbar-nav flex-grow-1">
+              <li class="nav-item col">
+                <a class="navbar-brand" style="padding-right: 0; padding-left: 0; margin: auto;" href="#">KIP LIM</a>
+              </li>
 
-        <!-- MENU ITEMS -->
-        <div class="collapse navbar-collapse nav-fill" id="navbarNavDropdown">
-          <ul class="navbar-nav flex-grow-1">
-            <li class="nav-item col">
-              <a class="navbar-brand" style="padding-right: 0; padding-left: 0; margin: auto;" href="#">KIP LIM</a>
-            </li>
+              <li class="nav-item col">
+                <a class="nav-link text-light" href="#about">About</a>
+              </li>
+              
+              <li class="nav-item col">
+                <a class="nav-link text-light" href="#projects">Projects</a>
+              </li>
 
-            <li class="nav-item col">
-              <a class="nav-link text-light" href="#about">About</a>
-            </li>
-            
-            <li class="nav-item col">
-              <a class="nav-link text-light" href="#projects">Projects</a>
-            </li>
+              <li class="nav-item col">
+                <a class="nav-link text-light" href="Blog Posts/index.html">Blog</a>
+              </li>
+              
+              <li class="nav-item col">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-dark">
+                    <a href="mailto:kiphenglim@gmail.com">
+                      <img src="Resources/Images/Contact/email.png" style="max-height: 30px; max-width: 30px;">
+                    </a>
+                  </button>
+                  <button type="button" class="btn btn-dark">
+                    <a href="https://wwww.github.com/kiphenglim">
+                      <img src="Resources/Images/Contact/github.png" style="max-height: 30px; max-width: 30px;">
+                    </a>
+                  </button>
+                  <button type="button" class="btn btn-dark">
+                    <a href="https://www.linkedin.com/in/kiphenglim">
+                      <img src="Resources/Images/Contact/linkedin.png" style="max-height: 30px; max-width: 30px;">
+                    </a>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
-            <li class="nav-item col">
-              <a class="nav-link text-light" href="Blog Posts/index.html">Blog</a>
-            </li>
-            
-            <li class="nav-item col">
-              <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-dark">
-                  <a href="mailto:kiphenglim@gmail.com">
-                    <img src="Resources/Images/Contact/email.png" style="max-height: 30px; max-width: 30px;">
-                  </a>
-                </button>
-                <button type="button" class="btn btn-dark">
-                  <a href="https://wwww.github.com/kiphenglim">
-                    <img src="Resources/Images/Contact/github.png" style="max-height: 30px; max-width: 30px;">
-                  </a>
-                </button>
-                <button type="button" class="btn btn-dark">
-                  <a href="https://www.linkedin.com/in/kiphenglim">
-                    <img src="Resources/Images/Contact/linkedin.png" style="max-height: 30px; max-width: 30px;">
-                  </a>
-                </button>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <!-- FIXED NAV BAR FOR SMALL SCREENS -->
+      <div class="container-fluid" style="padding: 0; overflow: hidden; max-width: max-content; max-height: max-content;">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+
+          <!-- MENU COLLAPSE -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
     </div>
 
-    <!-- FIXED NAV BAR FOR SMALL SCREENS -->
-    <div class="container-fluid" style="padding: 0; overflow: hidden; max-width: max-content; max-height: max-content;">
-      <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
 
-        <!-- MENU COLLAPSE -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="container-fluid" style="padding: 2vh; float: none; overflow: hidden;">
+
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small>3 days ago</small>
+          </div>
+          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          <small>Donec id elit non mi porta.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small class="text-muted">3 days ago</small>
+          </div>
+          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          <small class="text-muted">Donec id elit non mi porta.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small class="text-muted">3 days ago</small>
+          </div>
+          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          <small class="text-muted">Donec id elit non mi porta.</small>
+        </a>
+      </div>
+
     </div>
 
   </div>
+
+  </div>
+
+  
 
   <div id="content">
     <h2>
