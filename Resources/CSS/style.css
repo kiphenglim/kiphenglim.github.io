@@ -1,22 +1,24 @@
 /* GENERAL LINKS */
-a {color: lightgray;}
+a {
+  color: lightgray;
+}
 
 /* BODY AND FONT */
 @font-face {
   font-family: lexendDeca;
-  src: url(../Fonts/LexendDeca-Regular.ttf) ;
+  src: url(../Fonts/LexendDeca-Regular.ttf);
   font-style: normal;
 }
 
 @font-face {
   font-family: lexendDeca;
-  src: url(/Resources/Fonts/LexendDeca-Regular.ttf) ;
+  src: url(/Resources/Fonts/LexendDeca-Regular.ttf);
   font-style: normal;
 }
 
 @font-face {
   font-family: lexendExa;
-  src: url(../Fonts/LexendExa-Regular.ttf) ;
+  src: url(../Fonts/LexendExa-Regular.ttf);
   font-style: normal;
 }
 
@@ -24,13 +26,4 @@ body {
   background: #1b1b1b;
   color: #ffffff;
   font-family: lexendDeca, Helvetica;
-  font-size: medium;
-  margin: 0;
-  padding: 0;
-}
-
-/* LINKS INSIDE LIST GROUPS */
-.list-group-item a{
-  text-emphasis: none;
-  color: blue;
 }
