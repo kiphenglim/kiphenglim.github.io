@@ -27,10 +27,3 @@ body {
   color: #ffffff;
   font-family: lexendDeca, Helvetica;
 }
-
-@media (max-width: 1000px) {
-  .container{
-      padding: 0;
-      overflow-x: hidden;
-  }
-}
