@@ -30,171 +30,217 @@
   </head>
 
   <body>
-    <div class="container-fluid" 
-    style="padding: 0; float: none; overflow: hidden; max-height: max-content; max-width: max-content;">
+    <div
+      class="container-fluid"
+      style="
+        padding: 0;
+        float: none;
+        overflow: hidden;
+        max-height: max-content;
+        max-width: max-content;
+      "
+    >
+      <div
+        class="container-fluid"
+        style="padding: 3vh; float: none; height: max-content;"
+      >
+        <!-- FLOATING NAV BAR -->
+        <div
+          id="floating-nav"
+          class="container-fluid"
+          style="
+            padding: 0;
+            overflow: hidden;
+            max-width: max-content;
+            max-height: max-content;
+          "
+        >
+          <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg">
+            <!-- MENU COLLAPSE -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div class="container-fluid" 
-    style="padding: 3vh; float: none;height: max-content;">
-      <!-- FLOATING NAV BAR -->
-      <div id="floating-nav" class="container-fluid"
-        style="padding: 0; overflow: hidden; max-width: max-content; max-height: max-content;">
-        <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg">
+            <!-- MENU ITEMS -->
+            <div
+              class="collapse navbar-collapse nav-fill"
+              id="navbarNavDropdown"
+            >
+              <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item col">
+                  <a
+                    class="navbar-brand"
+                    style="padding-right: 0; padding-left: 0; margin: auto;"
+                    href="../../../index.html"
+                    >KIP LIM</a
+                  >
+                </li>
 
-          <!-- MENU COLLAPSE -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+                <li class="nav-item col">
+                  <a
+                    class="nav-link text-light"
+                    href="../../../index.html#about"
+                    >About</a
+                  >
+                </li>
 
-          <!-- MENU ITEMS -->
-          <div class="collapse navbar-collapse nav-fill" id="navbarNavDropdown">
-            <ul class="navbar-nav flex-grow-1">
-              <li class="nav-item col">
-                <a class="navbar-brand" 
-                style="padding-right: 0; padding-left: 0; margin: auto;" 
-                href="../../../index.html">KIP LIM</a>
-              </li>
+                <li class="nav-item col">
+                  <a
+                    class="nav-link text-light"
+                    href="../../../index.html#projects"
+                    >Projects</a
+                  >
+                </li>
 
-              <li class="nav-item col">
-                <a class="nav-link text-light" 
-                href="../../../index.html#about">About</a>
-              </li>
-              
-              <li class="nav-item col">
-                <a class="nav-link text-light" 
-                href="../../../index.html#projects">Projects</a>
-              </li>
+                <li class="nav-item col">
+                  <a class="nav-link text-light" href="../../index.html"
+                    >Blog</a
+                  >
+                </li>
 
-              <li class="nav-item col">
-                <a class="nav-link text-light" 
-                href="../../index.html">Blog</a>
-              </li>
-              
-              <li class="nav-item col">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-dark">
-                    <a href="mailto:kiphenglim@gmail.com">
-                      <img src="../../../Resources/Images/Contact/email.png" 
-                      style="max-height: 30px; max-width: 30px;">
-                    </a>
-                  </button>
-                  <button type="button" class="btn btn-dark">
-                    <a href="https://wwww.github.com/kiphenglim">
-                      <img src="../../../Resources/Images/Contact/github.png" 
-                      style="max-height: 30px; max-width: 30px;">
-                    </a>
-                  </button>
-                  <button type="button" class="btn btn-dark">
-                    <a href="https://www.linkedin.com/in/kiphenglim">
-                      <img src="../../../Resources/Images/Contact/linkedin.png" 
-                      style="max-height: 30px; max-width: 30px;">
-                    </a>
-                  </button>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
+                <li class="nav-item col">
+                  <div
+                    class="btn-group"
+                    role="group"
+                    aria-label="Basic example"
+                  >
+                    <button type="button" class="btn btn-dark">
+                      <a href="mailto:kiphenglim@gmail.com">
+                        <img
+                          src="../../../Resources/Images/Contact/email.png"
+                          style="max-height: 30px; max-width: 30px;"
+                        />
+                      </a>
+                    </button>
+                    <button type="button" class="btn btn-dark">
+                      <a href="https://github.com/kiphenglim">
+                        <img
+                          src="../../../Resources/Images/Contact/github.png"
+                          style="max-height: 30px; max-width: 30px;"
+                        />
+                      </a>
+                    </button>
+                    <button type="button" class="btn btn-dark">
+                      <a href="https://www.linkedin.com/in/kiphenglim">
+                        <img
+                          src="../../../Resources/Images/Contact/linkedin.png"
+                          style="max-height: 30px; max-width: 30px;"
+                        />
+                      </a>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
-    </div>
-    
 
-    <div class="container bg-secondary text-light" style="padding: 3vh 5vh">
-      <h2>
-        BLM and Corporations
-      </h2>
+      <div class="container bg-secondary text-light" style="padding: 3vh 5vh;">
+        <h2>
+          BLM and Corporations
+        </h2>
 
-      <p>
-        Let me be clear: I am not black, nor do I presume to speak over black
-        people. But these issues have been raised by black individuals for a
-        long time, and as a person with privilege, it is my duty to amplify
-        their voices.
-      </p>
+        <p>
+          Let me be clear: I am not black, nor do I presume to speak over black
+          people. But these issues have been raised by black individuals for a
+          long time, and as a person with privilege, it is my duty to amplify
+          their voices.
+        </p>
 
-      <p>
-        The last week has been exceedingly stressful for many people of colour.
-        For people of colour, the ongoing reality of police brutality has
-        overflowed into anger, sadness, and grief.
-      </p>
+        <p>
+          The last week has been exceedingly stressful for many people of
+          colour. For people of colour, the ongoing reality of police brutality
+          has overflowed into anger, sadness, and grief.
+        </p>
 
-      <p>
-        The black community is quite familiar with the usual PR tactics that
-        many companies engage in for nothing more than superficial optics. Queer
-        people have long commented on the fact that companies often change their
-        logos to rainbow or sell pride merch, profiting off people's identities
-        without making any institutional changes that actually support members
-        of the community. They are mostly silent this year due to the absence of
-        Pride and a more urgent issue affecting the black community. Instead,
-        companies have been posting statements supporting black people and
-        posting black squares rather than advocating or amplifying the needs of
-        black individuals.
-      </p>
+        <p>
+          The black community is quite familiar with the usual PR tactics that
+          many companies engage in for nothing more than superficial optics.
+          Queer people have long commented on the fact that companies often
+          change their logos to rainbow or sell pride merch, profiting off
+          people's identities without making any institutional changes that
+          actually support members of the community. They are mostly silent this
+          year due to the absence of Pride and a more urgent issue affecting the
+          black community. Instead, companies have been posting statements
+          supporting black people and posting black squares rather than
+          advocating or amplifying the needs of black individuals.
+        </p>
 
-      <p>
-        I cannot speak for other industries, but the tech sector is severely
-        lacking in minority representation. The majority of employees are White
-        or Asian males, even at the largest and most resource rich companies. A
-        quick glance at Google's 2020 Diversity Annual Report shows:
-      </p>
+        <p>
+          I cannot speak for other industries, but the tech sector is severely
+          lacking in minority representation. The majority of employees are
+          White or Asian males, even at the largest and most resource rich
+          companies. A quick glance at Google's 2020 Diversity Annual Report
+          shows:
+        </p>
 
-      <table class="table text-light" style="width: max-content;">
-        <thead>
-          <tr>
-            <th scope="col">Race/Ethnicity (US)</th>
-            <th scope="col">% Representation in Workforce</th>
-          </tr>
-        </thead>
+        <table class="table text-light" style="width: max-content;">
+          <thead>
+            <tr>
+              <th scope="col">Race/Ethnicity (US)</th>
+              <th scope="col">% Representation in Workforce</th>
+            </tr>
+          </thead>
 
-        <tbody>
-          <tr>
-            <th scope="row">Asian</th>
-            <td>41.9%</td>
-          </tr>
-          <tr>
-            <th scope="row">Black</th>
-            <td>3.7%</td>
-          </tr>
-          <tr>
-            <th scope="row">Latinx</th>
-            <td>5.9%</td>
-          </tr>
-          <tr>
-            <th scope="row">Native American</th>
-            <td>0.8%</td>
-          </tr>
-          <tr>
-            <th scope="row">White</th>
-            <td>51.7%</td>
-          </tr>
-        </tbody>
-      </table>
+          <tbody>
+            <tr>
+              <th scope="row">Asian</th>
+              <td>41.9%</td>
+            </tr>
+            <tr>
+              <th scope="row">Black</th>
+              <td>3.7%</td>
+            </tr>
+            <tr>
+              <th scope="row">Latinx</th>
+              <td>5.9%</td>
+            </tr>
+            <tr>
+              <th scope="row">Native American</th>
+              <td>0.8%</td>
+            </tr>
+            <tr>
+              <th scope="row">White</th>
+              <td>51.7%</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <p>
-        Leadership statistics are even worse. To Google's credit, they
-        <i>are</i> making their statistics easily accessible on the web. Plus,
-        Google is only the industry end of a long education pipeline that has
-        been failing its Black and Latinx students for a very long time. The
-        trends of representation at Google are echoed throughout many a
-        university's software engineering program and especially in College
-        Board's AP Computer Science exams.
-      </p>
+        <p>
+          Leadership statistics are even worse. To Google's credit, they
+          <i>are</i> making their statistics easily accessible on the web. Plus,
+          Google is only the industry end of a long education pipeline that has
+          been failing its Black and Latinx students for a very long time. The
+          trends of representation at Google are echoed throughout many a
+          university's software engineering program and especially in College
+          Board's AP Computer Science exams.
+        </p>
 
-      <p>
-        Even so, it's not enough to post a #blackouttuesday square on Instagram
-        or send a bland statement email to users. Companies should be following
-        through on their words: financially support black-run organisations,
-        step up hiring of people of colour, and provide resources to black
-        employees.
-      </p>
+        <p>
+          Even so, it's not enough to post a #blackouttuesday square on
+          Instagram or send a bland statement email to users. Companies should
+          be following through on their words: financially support black-run
+          organisations, step up hiring of people of colour, and provide
+          resources to black employees.
+        </p>
 
-      <p>
-        Signing off for now.
-      </p>
+        <p>
+          Signing off for now.
+        </p>
 
-      <p>
-        -Kip, 03 June 2020
-      </p>
-    </div>
+        <p>
+          -Kip, 03 June 2020
+        </p>
+      </div>
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
