@@ -1,128 +1,198 @@
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <head>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+
   <!-- Local style sheet -->
-  <link rel="stylesheet" type="text/css" href="../../Resources/CSS/style.css">
-  
+  <link rel="stylesheet" type="text/css" href="../../../Resources/CSS/style.css" />
+
   <!-- Title -->
   <title>kip speaks</title>
 </head>
 
 <body>
-  <div id="container"> </div>
+  <div class="container-fluid" style="
+        padding: 0;
+        float: none;
+        overflow: hidden;
+        max-height: max-content;
+        max-width: max-content;
+      ">
+    <div class="container-fluid" style="padding: 3vh; float: none; height: max-content;">
+      <!-- FLOATING NAV BAR -->
+      <div id="floating-nav" class="container-fluid" style="
+            padding: 0;
+            overflow: hidden;
+            max-width: max-content;
+            max-height: max-content;
+          ">
+        <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg">
+          <!-- MENU COLLAPSE -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-  <div id="header">
-    <h1>
+          <!-- MENU ITEMS -->
+          <div class="collapse navbar-collapse nav-fill" id="navbarNavDropdown">
+            <ul class="navbar-nav flex-grow-1">
+              <li class="nav-item col">
+                <a class="navbar-brand" style="padding-right: 0; padding-left: 0; margin: auto;"
+                  href="../../../index.html">KIP LIM</a>
+              </li>
+
+              <li class="nav-item col">
+                <a class="nav-link text-light" href="../../../index.html#about">About</a>
+              </li>
+
+              <li class="nav-item col">
+                <a class="nav-link text-light" href="../../../index.html#projects">Projects</a>
+              </li>
+
+              <li class="nav-item col">
+                <a class="nav-link text-light" href="../../index.html">Blog</a>
+              </li>
+
+              <li class="nav-item col">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-dark">
+                    <a href="mailto:kiphenglim@gmail.com">
+                      <img src="../../../Resources/Images/Contact/email.png"
+                        style="max-height: 30px; max-width: 30px;" />
+                    </a>
+                  </button>
+                  <button type="button" class="btn btn-dark">
+                    <a href="https://github.com/kiphenglim">
+                      <img src="../../../Resources/Images/Contact/github.png"
+                        style="max-height: 30px; max-width: 30px;" />
+                    </a>
+                  </button>
+                  <button type="button" class="btn btn-dark">
+                    <a href="https://www.linkedin.com/in/kiphenglim">
+                      <img src="../../../Resources/Images/Contact/linkedin.png"
+                        style="max-height: 30px; max-width: 30px;" />
+                    </a>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container bg-secondary text-light" style="padding: 3vh 5vh;">
+      <h2>
+        On the implications of opening early
+      </h2>
+      
+      <p>
+        As everyone and their mom is aware, life is not quite business as usual. Due to a pandemic of a respiratory
+        disease that is highly contagious, much of the united states is currently on lockdown to mitigate its spread and
+        allow hospitals to keep up with the effects of COVID19.
+      </p>
+      
+      <p>
+        Now, i do not claim to be an epidemiologist, virologist, or any other kind of expert. I am just a kid sitting in her
+        home during quaratine that has little else to do except plot the cumulative number of new cases everyday in cities
+        near me. And honestly? Things are not back to normal by any means.
+      </p>
+      
+      <p>
+        The United States has yet to reach the plateau portion of the curve. It is unclear if we have even reached
+        the inflection point where things begin to turn around.
+      </p>
+      
       <center>
-        23 may 2020
+        <img src="Images/US-Cumulative-TotalCases-31Dec19-19May20.png"
+          alt="United States Cumulative Total COVID19 Cases from Dec 31, 2019 to May 19, 2020">
+      
+        <br></br>
+      
+        <img src="Images/US-Cumulative-TotalCases-01Mar20-19May20.png"
+          alt="United States Cumulative Total COVID19 Cases from Mar 01, 2019 to May 19, 2020">
       </center>
-    </h1>
-  </div>
-
-  <div id="nav">
-    <ul>
-      <li><a href="../../index.html">home</a></li>
-      <li><a href="../index.html">kip's blog</a></li>
-      <li><a href="../../about.html">about kip</a></li>
-      <li><a href="../../contact.html">contact kip</a></li>
-    </ul>
-  </div>
-
-  <div id="article">
-    <h2>
-      on the implications of opening early
-    </h2>
-
-    <p>
-      as everyone and their mom is aware, life is not quite business as usual. due to a pandemic of a respiratory
-      disease that is highly contagious, much of the united states is currently on lockdown to mitigate its spread and
-      allow hospitals to keep up with the effects of covid19.
-    </p>
-
-    <p>
-      now, i do not claim to be an epidemiologist, virologist, or any other kind of expert. i am just a kid sitting in her home during quaratine that has little else to do except plot the cumulative number of new cases everyday in cities near me. and honestly? things are not back to normal by any means. 
-    </p>
-
-    <p>
-      the united states has yet to reach the plateau portion of the logistic curve. it is unclear if we have even reached the inflection point where things begin to turn around. 
-    </p>
-
-    <center>
-      <img src="Images/US-Cumulative-TotalCases-31Dec19-19May20.png" alt="United States Cumulative Total COVID19 Cases from Dec 31, 2019 to May 19, 2020">
       
-      <br></br>
+      <p>
+        We could have been preparing in the three months we had, but unfortunately not enough was done. Soon after things
+        began to quiet in Wuhan, reports of overflowing morgues and overwhelmed hospital staff in New York were dominating the
+        news cycles.
+      </p>
       
-      <img src="Images/US-Cumulative-TotalCases-01Mar20-19May20.png" alt="United States Cumulative Total COVID19 Cases from Mar 01, 2019 to May 19, 2020">
-    </center>
-    
-    <p>
-      we could have been preparing in the three months we had, but unfortunately not enough was done. soon after things began to quiet in wuhan, reports of overflowing morgues and overwhelmed hospital staff in new york were dominating the news cycles. 
-    </p>
-
-    <p>
-      i think that we're being too hasty by far to be considering reopening. granted, a semilinear growth rate is much better than an exponential, but we simply cannot expect our health infrastructure to be able to keep up. this will be especially true if the warnings from health experts go unheeded about the potential double trouble from both covid19 and influenza in the fall.
-    </p>
-
-    <p>
-      even in the san gabriel valley where i live, things do not seem to be looking great. two cities in sgv look to be experiencing the beginnings of exponential growth. personally i will be in home isolation until i return to classes in the fall (if that is happening). 
-    </p>
-
-    <center>
-      <img src="Images/Arcadia-Cumulative-TotalCases-16Mar20-20May20.png" alt="City of Arcadia Cumulative Total COVID19 Cases from Mar 16r, 2020 to May 20, 2020">
+      <p>
+        I think that we're being too hasty by far to be considering reopening. Granted, a semilinear growth rate is much
+        better than an exponential, but we simply cannot expect our health infrastructure to be able to keep up. this will be
+        especially true if the warnings from health experts go unheeded about the potential double trouble from both covid19
+        and influenza in the fall.
+      </p>
       
-      <br></br>
+      <p>
+        Even in the san gabriel valley where i live, things do not seem to be looking great. Two cities in the SGV look to be
+        experiencing the beginnings of exponential growth. Personally, I will be in home isolation until I return to classes in
+        the fall (if that is happening).
+      </p>
       
-      <img src="Images/Pasadena-Cumulative-TotalCases-16Mar20-20May20.png" alt="City of Pasadena Cumulative Total COVID19 Cases from Mar 16, 2019 to May 20, 2020">
-    </center>
-
-    <p>
-      by contrast, new zealand has been doing phenomenally. it has a beautiful logistic curve, and very few cases remaining on the island. as far as i recall, they have somewhere in the ballpark of three cases in the entire country.
-    </p>
-
-    <center>
-      <img src="Images/NZ-Cumulative-TotalCases-31Dec19-19May20.png" alt="New Zealand Cumulative Total COVID19 Cases from Dec 31, 2019 to may 19, 2020">
-    </center>
-
-    <p>
-      so yeah, considering what the good case is supposed to be and where we are at, i do not at all feel comfortable that our government leaders are opening businesses back up. even as we are starting to open lower-risk businesses like hair salons in california, there are already folks that interact with members of the healthy public despite potentially having covid19. individual people have demonstrated profound lack of good judgement, and if we cannot trust each other to do what is right for our collective safety, then returning to business as usual will not go well.
-    </p>
-
-    <p>
-      i will not speculate on why our leaders are choosing to open back up again. i just hope that we will not see a second coming of this pandemic.
-    </p>
-    
-    <p>
-      signing off for now.
-    </p>
-
-    <p>
-      -kip, 23 may 2020
-    </p>
-  </div>
-
-  <div id="blogNav">
-    <div id="blogPrev">
-      <a href="22-May-2020.html">prev</a>
+      <center>
+        <img src="Images/Arcadia-Cumulative-TotalCases-16Mar20-20May20.png"
+          alt="City of Arcadia Cumulative Total COVID19 Cases from Mar 16r, 2020 to May 20, 2020">
+      
+        <br></br>
+      
+        <img src="Images/Pasadena-Cumulative-TotalCases-16Mar20-20May20.png"
+          alt="City of Pasadena Cumulative Total COVID19 Cases from Mar 16, 2019 to May 20, 2020">
+      </center>
+      
+      <p>
+        bBy contrast, New Zealand has been doing phenomenally. It has a beautiful logistic curve, and very few cases remaining
+        on the island. As far as I recall, they have somewhere in the ballpark of three cases in the entire country.
+      </p>
+      
+      <center>
+        <img src="Images/NZ-Cumulative-TotalCases-31Dec19-19May20.png"
+          alt="New Zealand Cumulative Total COVID19 Cases from Dec 31, 2019 to may 19, 2020">
+      </center>
+      
+      <p>
+        So yeah, considering what the good case is supposed to be and where we are at, I do not at all feel comfortable that
+        our government leaders are opening businesses back up. even as we are starting to open lower-risk businesses like hair
+        salons in california, there are already folks that interact with members of the healthy public despite potentially
+        having covid19. individual people have demonstrated profound lack of good judgement, and if we cannot trust each other
+        to do what is right for our collective safety, then returning to business as usual will not go well.
+      </p>
+      
+      <p>
+        I will not speculate on why our leaders are choosing to open back up again. I just hope that we will not see a second
+        coming of this pandemic.
+      </p>
+      
+      <p>
+        Signing off for now.
+      </p>
+      
+      <p>
+        -Kip, 23 May 2020
+      </p>
     </div>
   </div>
 
-  <div id="footer">
-    kip 2020
-  </div>
-
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
