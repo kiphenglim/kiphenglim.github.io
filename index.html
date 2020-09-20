@@ -43,6 +43,10 @@
             </li>
 
             <li class="nav-item col">
+              <a class="nav-link text-light" href="#skills">Skills</a>
+            </li>
+            
+            <li class="nav-item col">
               <a class="nav-link text-light" href="#about">About</a>
             </li>
             
@@ -50,9 +54,9 @@
               <a class="nav-link text-light" href="#projects">Projects</a>
             </li>
 
-            <li class="nav-item col">
+            <!-- <li class="nav-item col">
               <a class="nav-link text-light" href="Blog Posts/index.html">Blog</a>
-            </li>
+            </li> -->
             
             <li class="nav-item col">
               <div class="btn-group" role="group" aria-label="Basic example">
@@ -119,9 +123,15 @@
       </div>
     </div>
 
-    <div class="container-fluid" style="padding: 3vw; float: none;">
+    <div class="container-fluid" style="padding: 10vh 3vh; float: none;" id="skills">
       <!-- BOTTOM OF PAGE CARD DECK -->
       <div class="container-fluid content-row">
+        <div class="container" style="padding: 2vh; float: none; overflow: hidden;">
+          <h2 style="text-align: center;">
+            SKILLS
+          </h2>
+        </div>
+
         <div class="row">
           <div class="col-md d-flex align-items-stretch">
             <div class="card bg-secondary text-center d-flex flex-grow-1">
@@ -145,6 +155,10 @@
                       <td>LaTeX</td>
                       <td>R</td>
                     </tr>
+                    <tr>
+                      <td>Zsh</td>
+                      <td>R</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -152,13 +166,14 @@
           </div>
 
           <div class="col-md d-flex align-items-stretch">
-            <div class="card bg-light text-dark text-center d-flex justify-content-center">
-              <div class= "card-body">
-                <h5 class="card-text">
+            <div class="card bg-light text-dark text-center d-flex
+            justify-content-center">
+              <!-- <div class= "card-body"> -->
+                <h5 class="card-text" style="padding: 2vw;">
                   My life goal is to build things that people intuitively know how to use. I want people to step into the simple, into the beautiful, into the familiar.
                 </h5>
               </div>
-            </div>
+            <!-- </div> -->
           </div>
 
           <div class="col-md d-flex align-items-stretch">
@@ -189,7 +204,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -216,13 +230,22 @@
 
         <div class="media-body" style="text-align: justify;">
           <h5>
-            Kip Lim (she/they) is a junior Computer Science major at Harvey Mudd College. Doesn't quite know what to do career-wise yet, but enjoys working on independent projects to pick up new skills. In fact, this site was born out of a desire to learn more about web design and what it takes to make your own site.
+            Ki Pheng Lim (the ph is pronounced like a p, not an f; nickname:
+            Kip) is a junior Computer Science major at Harvey Mudd College.
+            Uses she/her/hers but does not mind they/them/theirs. Doesn't
+            quite know what to do career-wise yet, but enjoys working on
+            independent projects to pick up new skills. In fact, this site was
+            born out of a desire to learn more about web design and what it
+            takes to make your own site.
           </h5>
 
           <br>
 
           <h5>
-            Well-organised, perpetually curious, self-driven, and a tenacious problem solver with a surprising love of reading documentation. Interested in everything web: UX/UI, frontend, backend. Every project is an opportunity to grow.
+            Well-organised, perpetually curious, self-driven, and a tenacious
+            problem solver with a surprising love of reading documentation.
+            Interested in everything product engineer: UX/UI, frontend, backend.
+            Every project is an opportunity to grow.
           </h5>
 
           <br>
@@ -235,7 +258,7 @@
 
           <h5>
             Likes: friends, food, and fun. (<span style="font-size: 125%;">&#8678;</span> potential employers!)<br>
-            Dislikes: bad color contrast, being too warm, mansplaining, slow walkers.
+            Dislikes: bad color contrast, lukewarm water, and slow walkers.
           </h5>
         </div>
       </div>
@@ -243,7 +266,7 @@
   </div>
 
   <!-- PROJECT CONTENT -->
-  <div id="projects" class="container-fluid bg-secondary" style="min-height: 80vh; padding: 10vh 3vh; float: none; overflow: hidden;">
+  <div id="projects" class="container-fluid bg-secondary" style="min-height: 60vh; padding: 10vh 3vh; float: none; overflow: hidden;">
     
     <div class="container" style="padding-bottom: 2vh; float: none; overflow: hidden;">
       <h2 style="text-align: center">
@@ -261,31 +284,58 @@
         </ol>
 
         <div class="carousel-inner">
-          <!-- Website -->
+          <!-- IOTTA -->
           <div class="carousel-item active">
-            <img src="Resources/Images/Projects/personal-site.png" class="d-block w-100" alt="This website!">
-            <div class="carousel-caption d-none d-sm-block" style="background-color: rgba(0, 0, 0, 0.75); padding: 2vh;">
-              <h5>kiphenglim.com</h5>
-              <p>A personal portfolio website. Houses an about, projects, blog, and contact info. Created using Bootstrap, HTML, and CSS.</p>
-            </div>
+            <a href="http://www.iotta.snia.org">
+              <img src="Resources/Images/Projects/iotta.png" class="d-block
+              w-75" alt="The homepage of iotta.snia.org." style="margin: auto;">
+              <div class="carousel-caption d-none d-sm-block"
+              style="background-color: rgba(0, 0, 0,
+              0.75); padding: 2vh;">
+                <h5>IOTTA Trace Repository</h5>
+                <p>The IOTTA Trace Repository has been hosting I/O block traces
+                for free use by academic and industry researchers for over ten
+                years. Among other improvements, I implemented IP caching and
+                logging to catch spammers and completely refactored the site's
+                unit tests.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Noom -->
+          <div class="carousel-item">
+            <a href="https://www.kiphenglim.com/FA20HackMIT-Noom/">
+              <img src="Resources/Images/Projects/noom.png" class="d-block w-75"
+              alt="A screenshot of a purple webpage with a number of cards on
+              it. Each card has a lecture thumbnail and an option to join a Noom
+              Room." style="margin: auto;">
+              <div class="carousel-caption d-none d-sm-block" style="background-color: rgba(0, 0, 0, 0.75); padding: 2vh;">
+                <h5>Noom</h5>
+                <p>A HackMIT 2020 project! Our team created this prototype in
+                  just a couple of hours. Based on our own experiences with remote
+                  learning, we thought it would be great for folks to find friends
+                  to watch lecture videos with without actually having to schedule
+                  in advance. </p>
+              </div>
+            </a>
           </div>
 
           <!-- Seam Carving -->
           <div class="carousel-item">
-            <img src="Resources/Images/Projects/seam-carving.png" class="d-block w-100" alt="Two images of paintings of geese. They are the same, but the one on the right has been cropped using dynamic content-aware resizing.">
-            <div class="carousel-caption d-none d-sm-block" style="background-color: rgba(0, 0, 0, 0.75); padding: 2vh">
-              <h5>Dynamic Image Croppping - Seam Carving</h5>
-              <p>Dynamic image cropping. Removes the least energy (difference in luminosity from surrounding pixels) “seams,” which are continuous pixel paths. </p>
-            </div>
-          </div>
-
-          <!-- Spampede -->
-          <div class="carousel-item">
-            <img src="Resources/Images/Projects/spampede.png" class="d-block w-100" alt="A screenshot of a white canvas with a yellow background. The word 'SPAMPEDE' is at the top, along with some buttons that say 'New Game', 'Pause', and 'Start'.">
-            <div class="carousel-caption d-none d-sm-block" style="background-color: rgba(0, 0, 0, 0.75); padding: 2vh">
-              <h5>Spampede</h5>
-              <p>The classic snake game housed in a Java applet. Snake moves via user control or an AI mode that finds the nearest food using breadth first search.</p>
-            </div>
+            <a href="https://en.wikipedia.org/wiki/Seam_carving">
+              <img src="Resources/Images/Projects/seam-carving.png"
+              class="d-block w-75" alt="Two images of paintings of geese. They
+              are the same, but the one on the right has been cropped using
+              dynamic content-aware resizing." style="margin: auto;">
+              <div class="carousel-caption d-none d-sm-block" style="background-color: rgba(0, 0, 0, 0.75); padding: 2vh;">
+                <h5>Dynamic Image Croppping - Seam Carving</h5>
+                <p>Dynamic image cropping underlies modern commercial
+                content-aware scaling algorithms. Seam carving removes the
+                "least energy seam," which is a path of continuous pixels
+                where the difference in luminosity between pixels in the
+                path and neighbour pixels are minimised.</p>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -316,5 +366,4 @@
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
 </body>
-
 </html>
