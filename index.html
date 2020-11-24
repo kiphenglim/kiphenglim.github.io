@@ -230,28 +230,21 @@
 
         <div class="media-body" style="text-align: justify;">
           <h5>
-            Ki Pheng Lim (the ph is pronounced like a p, not an f; nickname:
-            Kip) is a junior Computer Science major at Harvey Mudd College.
-            Uses she/her/hers but does not mind they/them/theirs. Doesn't
-            quite know what to do career-wise yet, but enjoys working on
-            independent projects to pick up new skills. In fact, this site was
-            born out of a desire to learn more about web design and what it
-            takes to make your own site.
+            Ki Pheng (Kip) Lim [she/they] is a junior Computer Science major
+            at Harvey Mudd College. She doesn't quite know what to do
+            career-wise yet, but enjoys improving her code quality,
+            documenting and preserving her work, and picking up new
+            development skills. In fact, this site was born out of a desire to
+            learn more about web design.
           </h5>
 
           <br>
 
           <h5>
-            Well-organised, perpetually curious, self-driven, and a tenacious
-            problem solver with a surprising love of reading documentation.
-            Interested in everything product engineer: UX/UI, frontend, backend.
-            Every project is an opportunity to grow.
-          </h5>
-
-          <br>
-
-          <h5>
-            Looking for fullstack or software engineering internships in a collaborative environment and hoping to contribute to meaningful projects. Willing to relocate.
+            Other folks have described her as well-organised, perpetually
+            curious, self-driven, and a tenacious problem solver. After
+            graduation, she is seeking an infrastructure role with an emphasis
+            in code quality, testing, and legacy software maintenance.
           </h5>
 
           <br>
@@ -274,80 +267,117 @@
       </h2>
     </div>
 
-    <div class="container-fluid">
-      <div id="projectExamples" class="carousel slide" data-ride="carousel">
-        <!-- Indicators for number of projects -->
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
-
-        <div class="carousel-inner">
-          <!-- IOTTA -->
-          <div class="carousel-item active">
-            <a href="http://www.iotta.snia.org">
-              <img src="Resources/Images/Projects/iotta.png" class="d-block
-              w-75" alt="The homepage of iotta.snia.org." style="margin: auto;">
-              <div class="carousel-caption d-none d-sm-block"
-              style="background-color: rgba(0, 0, 0,
-              0.75); padding: 2vh;">
-                <h5>IOTTA Trace Repository</h5>
-                <p>The IOTTA Trace Repository has been hosting I/O block traces
-                for free use by academic and industry researchers for over ten
-                years. Among other improvements, I implemented IP caching and
-                logging to catch spammers and completely refactored the site's
-                unit tests.</p>
-              </div>
+    <div class="card-columns">
+      <div class="card">
+        <img src="Resources/Images/Projects/painting-classifier.png" class="card-img-top" alt="...">
+        <div class="card-body text-dark">
+          <h5 class="card-title">
+            <a href="https://www.paintingclassifier.com">
+              Painting Classifier
             </a>
-          </div>
-
-          <!-- Noom -->
-          <div class="carousel-item">
-            <a href="https://www.kiphenglim.com/FA20HackMIT-Noom/">
-              <img src="Resources/Images/Projects/noom.png" class="d-block w-75"
-              alt="A screenshot of a purple webpage with a number of cards on
-              it. Each card has a lecture thumbnail and an option to join a Noom
-              Room." style="margin: auto;">
-              <div class="carousel-caption d-none d-sm-block" style="background-color: rgba(0, 0, 0, 0.75); padding: 2vh;">
-                <h5>Noom</h5>
-                <p>A HackMIT 2020 project! Our team created this prototype in
-                  just a couple of hours. Based on our own experiences with remote
-                  learning, we thought it would be great for folks to find friends
-                  to watch lecture videos with without actually having to schedule
-                  in advance. </p>
-              </div>
-            </a>
-          </div>
-
-          <!-- Seam Carving -->
-          <div class="carousel-item">
-            <a href="https://en.wikipedia.org/wiki/Seam_carving">
-              <img src="Resources/Images/Projects/seam-carving.png"
-              class="d-block w-75" alt="Two images of paintings of geese. They
-              are the same, but the one on the right has been cropped using
-              dynamic content-aware resizing." style="margin: auto;">
-              <div class="carousel-caption d-none d-sm-block" style="background-color: rgba(0, 0, 0, 0.75); padding: 2vh;">
-                <h5>Dynamic Image Croppping - Seam Carving</h5>
-                <p>Dynamic image cropping underlies modern commercial
-                content-aware scaling algorithms. Seam carving removes the
-                "least energy seam," which is a path of continuous pixels
-                where the difference in luminosity between pixels in the
-                path and neighbour pixels are minimised.</p>
-              </div>
-            </a>
-          </div>
+          </h5>
+          <p class="card-text">
+            A Flask web application designed to predict the artist, genre, and style of paintings using a convolutional neural network trained using fast.ai. The application is deployed on Google App Engine.
+          </p>
+          <p class="card-text"><small class="text-muted">
+            August 2020 - December 2020
+          </small></p>
         </div>
+      </div>
 
-        <!-- Carousel buttons -->
-        <a class="carousel-control-prev" href="#projectExamples" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#projectExamples" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+      <div class="card">
+        <img src="Resources/Images/Projects/iotta.png" class="card-img-top" alt="...">
+        <div class="card-body text-dark">
+          <h5 class="card-title">
+            <a href="https://www.iotta.snia.org">
+              IOTTA Trace Repository
+            </a>
+          </h5>
+          <p class="card-text">
+            Maintained Rails codebase for a repository hosting 22 TB of I/O
+            storage traces with 300 monthly downloads and 500 citations over
+            ten years.
+          </p>
+          <p class="card-text"><small class="text-muted">
+            June 2020 - August 2020
+          </small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Resources/Images/Projects/noom.png" class="card-img-top" alt="...">
+        <div class="card-body text-dark">
+          <h5 class="card-title">
+            <a href="https://www.github.com/kiphenglim/FA20HackMIT-Noom">
+              NOOM
+            </a>
+          </h5>
+          <p class="card-text">
+            A HackMIT 2020 project. Want to watch lectures with other students but don’t have friends in your class? Looking for study buddies to hold each other accountable? Collaborative remote learning has never been easier!
+          </p>
+          <p class="card-text"><small class="text-muted">
+            September 2020
+          </small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Resources/Images/Projects/personal-site.png" class="card-img-top" alt="...">
+        <div class="card-body text-dark">
+          <h5 class="card-title">
+            <a href="https://www.kiphenglim.com">
+              Personal Portfolio
+            </a>
+          </h5>
+          <p class="card-text">
+            The very first foray into frontend design. Created with vanilla
+            JS, HTML, CSS, and Bootstrap. Features some of Kip's projects and
+            works in development.
+          </p>
+          <p class="card-text"><small class="text-muted">
+            June 2020 - Present
+          </small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Resources/Images/Projects/seam-carving.png" class="card-img-top" alt="...">
+        <div class="card-body text-dark">
+          <h5 class="card-title">
+            <a href="https://www.github.com/kiphenglim/FA20HackMIT-Noom">
+              Seam Carving
+            </a>
+          </h5>
+          <p class="card-text">
+            An implementation of a dynamic image cropping algorithms. Seam
+            carving removes the "least energy seam," which is a path of
+            continuous pixels where the difference in luminosity between
+            pixels in the path and neighbour pixels are minimised.
+          </p>
+          <p class="card-text"><small class="text-muted">
+            March 2019
+          </small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Resources/Images/Projects/spampede.png" class="card-img-top" alt="...">
+        <div class="card-body text-dark">
+          <h5 class="card-title">
+            <a href="https://www.github.com/kiphenglim/FA20HackMIT-Noom">
+              Spampede
+            </a>
+          </h5>
+          <p class="card-text">
+            The classic snake game where the snake's latest obsession is spam!
+            A Java applet that allows users to control the snake manually,
+            reverse the snake, or even start AI mode, which uses BFS to find a
+            path to the nearest spam.
+          </p>
+          <p class="card-text"><small class="text-muted">
+            May 2019
+          </small></p>
+        </div>
       </div>
     </div>
   </div>
