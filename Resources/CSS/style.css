@@ -3,6 +3,10 @@ a {
   color: lightgray;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* BODY AND FONT */
 @font-face {
   font-family: lexendDeca;
