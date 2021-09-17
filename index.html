@@ -253,18 +253,46 @@
 
     <div class="card-columns">
       <div class="card">
-        <img src="Resources/Images/Projects/painting-classifier.png" class="card-img-top" alt="...">
+        <img src="Resources/Images/Projects/dbxlint.png" class="card-img-top" alt="...">
         <div class="card-body text-dark">
           <h5 class="card-title">
-            <a href="https://www.paintingclassifier.com">
-              Painting Classifier
+            <a href="https://github.com/dropbox">
+              DBXLint
             </a>
           </h5>
           <p class="card-text">
-            A Flask web application designed to predict the artist, genre, and style of paintings using a convolutional neural network trained using fast.ai. The application is deployed on Google App Engine.
+            Created dbxlint, an in-house Go lint engine to eventually replace
+            linting provided by third-party PHP solution Arcanist. dbxlint
+            reads linter configurations (Bazel targets, flags, etc.), SSH into
+            remote DevBoxes if necessary, and runs Bazel-built and local
+            linters in parallel. Compiled to binary and packaged in SQFS.
+            Currently integrated into Arcanist until transition from
+            Phabricator; used by 800+ engineers during code review process.
           </p>
           <p class="card-text"><small class="text-muted">
-            August 2020 - December 2020
+            May 2021 - August 2021
+          </small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Resources/Images/Projects/dropbox.png" class="card-img-top" alt="...">
+        <div class="card-body text-dark">
+          <h5 class="card-title">
+            <a href="https://www.dropbox.com">
+              Photo Albums @ Dropbox
+            </a>
+          </h5>
+          <p class="card-text">
+            Hack Week 2021 Grand Prize Winner and most upvoted project of the year.
+            Reimagines photos at Dropbox as Albums (1-many) in addition to
+            Files (1-1). Developed data model for album entities, user-album
+            associations, album-user associations, and album-file associations
+            within Edgestore (object-relational mapping wrapper). Projected
+            ready to ship by end of Q3 for all Dropbox users.
+          </p>
+          <p class="card-text"><small class="text-muted">
+            July 2021
           </small></p>
         </div>
       </div>
@@ -285,6 +313,7 @@
           <p class="card-text"><small class="text-muted">
             June 2020 - August 2020
           </small></p>
+
         </div>
       </div>
 
