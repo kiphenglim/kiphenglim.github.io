@@ -1,13 +1,9 @@
 import {
-  aboutSectionHTML,
   whoAmISectionHTML,
   skillsSectionHTML,
   projectsSectionHTML,
-  achievementsSectionHTML,
   contactSectionHTML,
   helpSectionHTML,
-  website,
-  websiteSectionHTML,
 } from "./commands.js";
 
 const command = document.getElementById("command");
@@ -57,15 +53,6 @@ const showExecutedCommand = () => {
   commandOutput.innerHTML += typedCommand;
 };
 
-const redirectToGUIWebsite = () => {
-  setTimeout(() => {
-    const anchor = document.createElement("a");
-    anchor.href = website;
-    anchor.target = "_blank";
-    anchor.click();
-  }, 2000);
-};
-
 const showCommandNotFound = () => {
   return `<div class="command-result">
           <span class="command-not-found">${command.value}</span>
@@ -92,44 +79,22 @@ const executeCommand = () => {
     case "help":
       showCommandOutput(helpSectionHTML);
       addCommandToHistory();
-
       break;
     case "whoami":
       showCommandOutput(whoAmISectionHTML);
       addCommandToHistory();
-
-      break;
-    case "about":
-      showCommandOutput(aboutSectionHTML);
-      addCommandToHistory();
-
       break;
     case "skills":
       showCommandOutput(skillsSectionHTML);
       addCommandToHistory();
-
       break;
     case "projects":
       showCommandOutput(projectsSectionHTML);
       addCommandToHistory();
-
-      break;
-    case "achievements":
-      showCommandOutput(achievementsSectionHTML);
-      addCommandToHistory();
-
-      break;
-    case "website":
-      showCommandOutput(websiteSectionHTML);
-      addCommandToHistory();
-
-      redirectToGUIWebsite();
-
       break;
     case "contact":
       showCommandOutput(contactSectionHTML);
       addCommandToHistory();
-
       break;
     case "clear":
       emptyTerminal();
