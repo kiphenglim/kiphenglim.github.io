@@ -114,22 +114,11 @@ const getHelp = () => {
 };
 
 const getPortfolio = () => {
-  fetch(portfolioAPI)
-    .then((data) => data.json())
-    .then((portfolio) => {
-      roles = portfolio.result[0].roles.split(",");
-      skills = portfolio.result[0].skills;
-      projects = portfolio.result[0].projects;
-      email = portfolio.result[0].email;
-    })
-    .then(() => {
-      whoAmISectionHTML = getRoles();
-      skillsSectionHTML = getSkills();
-      projectsSectionHTML = getProjects();
-      contactSectionHTML = getContact();
-      helpSectionHTML = getHelp();
-    })
-    .catch(() => alert("Something went wrong!!"));
+  whoAmISectionHTML = getRoles();
+  skillsSectionHTML = getSkills();
+  projectsSectionHTML = getProjects();
+  contactSectionHTML = getContact();
+  helpSectionHTML = getHelp();
 };
 
 getPortfolio();
@@ -138,9 +127,6 @@ export {
   whoAmISectionHTML,
   skillsSectionHTML,
   projectsSectionHTML,
-  achievementsSectionHTML,
   contactSectionHTML,
   helpSectionHTML,
-  website,
-  websiteSectionHTML,
 };
