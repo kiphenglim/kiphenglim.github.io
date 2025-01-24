@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Brijen Makwana</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0m height=device-height"/>
+        <title>Kip Lim</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap"
             rel="stylesheet"
         />
-        <link href="./styles.css" rel="stylesheet" />
+        <link href="./styles.css" rel="stylesheet"/>
+        <script type="module" src="./app.js"></script>
     </head>
     <body>
         <div class="main-container">
@@ -28,12 +28,9 @@ ___  __    ___  ________        ___       ___  _____ ______
                 <h3 class="message-text"">
                     Login time: <span id="datetime"></span> on ttys000
                 </h3>
-                <script>
-                  // Get current date and time
+                <script class="inject-datetime">
                   var now = new Date();
                   var datetime = now.toLocaleString();
-
-                  // Insert date and time into HTML
                   document.getElementById("datetime").innerHTML = datetime;
                 </script>
                 <h4 class="message-text">
@@ -56,6 +53,5 @@ ___  __    ___  ________        ___       ___  _____ ______
                 />
             </div>
         </div>
-        <script type="module" src="./app.js"></script>
     </body>
 </html>

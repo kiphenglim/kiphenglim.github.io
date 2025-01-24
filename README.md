@@ -1,5 +1,3 @@
-# Terminal style portfolio website
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -34,3 +32,6 @@
 - CSS
 - Javascript
 - Sanity.io API
+
+## Attributions
+- Heavily inspired by [Brijen Makwana's Terminal Portfolio project](https://github.com/BrijenMakwana/terminal-portfolio)
