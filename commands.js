@@ -1,51 +1,16 @@
-const portfolioAPI = `https://gzsq4ssh.api.sanity.io/v2021-10-21/data/query/production?query=*[_type == "personal"] {
-  "roles": roles,
-  "about": about,
-  "email": email,
-  "skills": *[ _type == "skills"] {
-    "id": _id,
-    "title": title,
-    "image": image.asset->url
-  },
-  "projects": *[ _type == "projects"] {
-    "id": _id,
-    "title": title,
-    "image": image.asset->url,
-    "description": description,
-    "url": url
-  },
-  "achievements": *[ _type == "achievements"] {
-    "id": _id,
-    "title": title,
-    "image": image.asset->url,
-    "description": description,
-    "url": url
-  },
-}`;
-
-let about, roles, skills, projects, achievements, email;
-
-let aboutSectionHTML,
-  whoAmISectionHTML,
+let whoAmISectionHTML,
   skillsSectionHTML,
   projectsSectionHTML,
-  achievementsSectionHTML,
   contactSectionHTML,
-  helpSectionHTML,
-  websiteSectionHTML;
-
-const getAbout = () => {
-  const renderData = `<div class="command-result"><p class="about-text">${about}</p><div>`;
-
-  return renderData;
-};
+  helpSectionHTML;
 
 const getRoles = () => {
   let renderData = `<div class="command-result">`;
-
-  roles.forEach((role) => {
-    renderData += `<li class="data-li">${role}</li>`;
-  });
+  renderData += `<p class="data-li">Infrastructure software engineer</li>`;
+  renderData += `<p class="data-li">Based in Boston, MA</li>`;
+  renderData += `<p class="data-li">Formerly Los Angeles, Seattle</li>`;
+  renderData += `<p class="data-li">Current role: SWE II @ Dropbox</li>`;
+  renderData += `<p class="data-li">Education: CS @ Harvey Mudd College</li>`;
   renderData += "</div>";
 
   return renderData;
@@ -70,20 +35,6 @@ const getProjects = () => {
     <th class="data-name-th"><a href="${project.url}" target="_blank" class="data-link">${project.title}</a></th>
     <td class="data-description-td">${project.description}</td>
   </tr>`;
-  });
-  renderData += "</table></div>";
-
-  return renderData;
-};
-
-const getAchievements = () => {
-  let renderData = `<div class="command-result"><table class="data-table">`;
-
-  achievements.forEach((achievement) => {
-    renderData += `<tr>
-      <th class="data-name-th"><a href="${achievement.url}" target="_blank" class="data-link">${achievement.title}</a></th>
-      <td class="data-description-td">${achievement.description}</td>
-    </tr>`;
   });
   renderData += "</table></div>";
 
@@ -133,24 +84,12 @@ const getHelp = () => {
       description: "What I do",
     },
     {
-      command: "about",
-      description: "Know about me",
-    },
-    {
       command: "skills",
       description: "What tech stacks I use",
     },
     {
       command: "projects",
       description: "Yeah, I've made some really cool stuff, Wanna see!!",
-    },
-    {
-      command: "Achievements",
-      description: "A little bragging",
-    },
-    {
-      command: "website",
-      description: "My portfolio site but with GUI",
     },
     {
       command: "contact",
@@ -174,34 +113,21 @@ const getHelp = () => {
   return renderData;
 };
 
-const website = "https://brijenmakwana.vercel.app";
-
-const getWebsite = () => {
-  const renderData = `<div class="command-result">Redirecting you to my portfolio website <a href="${website}" target="_blank" class="data-link">${website}</a> ...</div>`;
-
-  return renderData;
-};
-
 const getPortfolio = () => {
   fetch(portfolioAPI)
     .then((data) => data.json())
     .then((portfolio) => {
-      about = portfolio.result[0].about;
       roles = portfolio.result[0].roles.split(",");
       skills = portfolio.result[0].skills;
       projects = portfolio.result[0].projects;
-      achievements = portfolio.result[0].achievements;
       email = portfolio.result[0].email;
     })
     .then(() => {
-      aboutSectionHTML = getAbout();
       whoAmISectionHTML = getRoles();
       skillsSectionHTML = getSkills();
       projectsSectionHTML = getProjects();
-      achievementsSectionHTML = getAchievements();
       contactSectionHTML = getContact();
       helpSectionHTML = getHelp();
-      websiteSectionHTML = getWebsite();
     })
     .catch(() => alert("Something went wrong!!"));
 };
@@ -209,7 +135,6 @@ const getPortfolio = () => {
 getPortfolio();
 
 export {
-  aboutSectionHTML,
   whoAmISectionHTML,
   skillsSectionHTML,
   projectsSectionHTML,
