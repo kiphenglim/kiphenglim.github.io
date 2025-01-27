@@ -2,13 +2,43 @@ let whoAmISectionHTML, skillsSectionHTML, contactSectionHTML, helpSectionHTML;
 
 const getRoles = () => {
   const about = [
-    "Software Engineer at Dropbox",
-    "Based in Boston, MA",
-    "BSc Computer Science from Harvey Mudd College",
+    {
+      aboutTitle: "",
+      aboutSection: [
+        "Software Engineer at Dropbox",
+        "Current team: Metrics (telemetry and observability)",
+        "Previous teams: Code Workflows (source control hosting and search)",
+      ],
+    },
+    {
+      aboutTitle: "Interests",
+      aboutSection: [
+        "Roles: Infrastructure/backend on actively scaling teams",
+        "Languages: Go, Rust, Julia",
+        "Technologies: Kubernetes, AWS/GCP, Cassandra, ScyllaDB",
+      ],
+    },
+    {
+      aboutTitle: "Location",
+      aboutSection: [
+        "Currently based in Boston, MA (not open to relocation)",
+        "Previously based in Los Angeles, CA and Seattle, WA",
+      ],
+    },
+    {
+      aboutTitle: "Education",
+      aboutSection: [
+        "Bachelors of Science, Computer Science at Harvey Mudd College",
+        "Concentration in Psychology at Harvey Mudd College",
+      ],
+    },
   ];
   let renderData = `<div class="command-result">`;
-  about.forEach((line) => {
-    renderData += `<li class="data-li">${line}</li>`;
+  about.forEach((item) => {
+    renderData += `<dt class="data-dt">${item.aboutTitle}<dt>`;
+    item.aboutSection.forEach((bullet) => {
+      renderData += `<dd class="data-dd"> — ${item.aboutSection}</dd>`;
+    });
   });
   renderData += "</div>";
 
@@ -27,14 +57,14 @@ const getSkills = () => {
     "React",
   ];
 
-  renderData += `<dt>Languages</dt>`;
+  renderData += `<dt class="data-dt">Languages</dt>`;
   languages.forEach((language) => {
-    renderData += `<dd class="data-li">${language}</dd>`;
+    renderData += `<dd class="data-dd">${language}</dd>`;
   });
 
-  renderData += `<dt>Tools/Frameworks</dt>`;
+  renderData += `<dt  class="data-dt>Tools/Frameworks</dt>`;
   tools.forEach((tool) => {
-    renderData += `<dd class="data-li">${tool}</dd>`;
+    renderData += `<dd class="data-dd"> — ${tool}</dd>`;
   });
   renderData += "</dl></div>";
 
@@ -48,19 +78,25 @@ const getContact = () => {
     {
       contactTitle: "email",
       contactPlace: "kiphenglim@gmail.com",
+      contactUrl: "mailto:kiphenglim@gmail.com",
     },
     {
       contactTitle: "github",
       contactPlace: "github.com/kiphenglim",
+      contactUrl: "https://www.github.com/kiphenglim",
     },
     {
       contactTitle: "linkedin",
-      contactPlace: "https://linkedin.com/in/kiphenglim",
+      contactPlace: "linkedin.com/in/kiphenglim",
+      contactUrl: "https://www.linkedin.com/in/kiphenglim",
     },
   ];
 
   contacts.forEach((item) => {
-    renderData += `<dt class="data-dt">${item.contactTitle}<dt><dd class="data-dd"> - ${item.contactPlace}</dd>`;
+    renderData += `<dt class="data-dt">${item.contactTitle}<dt>
+    <dd class="data-dd">
+      — <a href="${item.contactUrl}" target="_blank" class="data-link">${item.contactPlace}</a>
+    </dd>`;
   });
   renderData += "</dl></div>";
 
@@ -78,10 +114,6 @@ const getHelp = () => {
     {
       command: "skills",
       description: "What tech stacks I use",
-    },
-    {
-      command: "projects",
-      description: "Yeah, I've made some really cool stuff, Wanna see!!",
     },
     {
       command: "contact",
