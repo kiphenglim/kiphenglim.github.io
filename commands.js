@@ -37,7 +37,7 @@ const getRoles = () => {
   about.forEach((item) => {
     renderData += `<dt class="data-dt">${item.aboutTitle}<dt>`;
     item.aboutSection.forEach((bullet) => {
-      renderData += `<dd class="data-dd"> — ${bullet}</dd>`;
+      renderData += `<dd class="data-dd"> ${bullet}</dd>`;
     });
   });
   renderData += "</dl></div>";
@@ -64,7 +64,7 @@ const getSkills = () => {
 
   renderData += `<dt class="data-dt">Tools/Frameworks</dt>`;
   tools.forEach((tool) => {
-    renderData += `<dd class="data-dd"> — ${tool}</dd>`;
+    renderData += `<dd class="data-dd"> ${tool}</dd>`;
   });
   renderData += "</dl></div>";
 
@@ -95,7 +95,7 @@ const getContact = () => {
   contacts.forEach((item) => {
     renderData += `<dt class="data-dt">${item.contactTitle}<dt>
     <dd class="data-dd">
-      — <a href="${item.contactUrl}" target="_blank" class="data-link">${item.contactPlace}</a>
+      <a href="${item.contactUrl}" target="_blank" class="data-link">${item.contactPlace}</a>
     </dd>`;
   });
   renderData += "</dl></div>";
@@ -126,7 +126,7 @@ const getHelp = () => {
   ];
 
   availableCommands.forEach((cmd) => {
-    renderData += `<dt class="data-dt">${cmd.command}<dt><dd class="data-dd"> - ${cmd.description}</dd>`;
+    renderData += `<dt class="data-dt">${cmd.command}<dt><dd class="data-dd"> ${cmd.description}</dd>`;
   });
   renderData += "</dl></div>";
 
