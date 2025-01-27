@@ -1,12 +1,12 @@
 let whoAmISectionHTML, skillsSectionHTML, contactSectionHTML, helpSectionHTML;
 
 const getRoles = () => {
-  about = [
+  const about = [
     "Software Engineer at Dropbox",
     "Based in Boston, MA",
     "BSc Computer Science from Harvey Mudd College",
   ];
-  let renderData = `<div class="command-result">`;
+  const renderData = `<div class="command-result">`;
   about.forEach((line) => {
     renderData += `<li class="data-li">${line}</li>`;
   });
@@ -17,8 +17,15 @@ const getRoles = () => {
 
 const getSkills = () => {
   let renderData = `<div class="command-result"><dl>`;
-  languages = ["Python", "Go", "JavaScript"];
-  tools = ["Git", "GitHub", "Bazel", "Protocol Buffers", "Cassandra", "React"];
+  const languages = ["Python", "Go", "JavaScript"];
+  const tools = [
+    "Git",
+    "GitHub",
+    "Bazel",
+    "Protocol Buffers",
+    "Cassandra",
+    "React",
+  ];
 
   renderData += `<dt>Languages</dt>`;
   languages.forEach((language) => {
