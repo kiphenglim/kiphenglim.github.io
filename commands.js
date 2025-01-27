@@ -6,7 +6,7 @@ const getRoles = () => {
     "Based in Boston, MA",
     "BSc Computer Science from Harvey Mudd College",
   ];
-  const renderData = `<div class="command-result">`;
+  let renderData = `<div class="command-result">`;
   about.forEach((line) => {
     renderData += `<li class="data-li">${line}</li>`;
   });
