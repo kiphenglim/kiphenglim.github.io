@@ -1,7 +1,6 @@
 import {
   whoAmISectionHTML,
   skillsSectionHTML,
-  projectsSectionHTML,
   contactSectionHTML,
   helpSectionHTML,
 } from "./commands.js";
@@ -27,7 +26,7 @@ const upKeyIsPressed = (event) => {
 };
 
 const clearKeyIsPressed = (event) => {
-  return (event.metaKey || event.ctrlKey) && event.which == 75;
+  return (event.metaKey || event.ctrlKey) && event.key == "l";
 };
 
 const getPreviouslyExecutedCommand = () => {
@@ -86,10 +85,6 @@ const executeCommand = () => {
       break;
     case "skills":
       showCommandOutput(skillsSectionHTML);
-      addCommandToHistory();
-      break;
-    case "projects":
-      showCommandOutput(projectsSectionHTML);
       addCommandToHistory();
       break;
     case "contact":
