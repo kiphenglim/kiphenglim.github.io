@@ -1,42 +1,35 @@
-let whoAmISectionHTML,
-  skillsSectionHTML,
-  projectsSectionHTML,
-  contactSectionHTML,
-  helpSectionHTML;
+let whoAmISectionHTML, skillsSectionHTML, contactSectionHTML, helpSectionHTML;
 
 const getRoles = () => {
+  about = [
+    "Software Engineer at Dropbox",
+    "Based in Boston, MA",
+    "BSc Computer Science from Harvey Mudd College",
+  ];
   let renderData = `<div class="command-result">`;
-  renderData += `<p class="data-li">Infrastructure software engineer</li>`;
-  renderData += `<p class="data-li">Based in Boston, MA</li>`;
-  renderData += `<p class="data-li">Formerly Los Angeles, Seattle</li>`;
-  renderData += `<p class="data-li">Current role: SWE II @ Dropbox</li>`;
-  renderData += `<p class="data-li">Education: CS @ Harvey Mudd College</li>`;
+  about.forEach((line) => {
+    renderData += `<li class="data-li">${line}</li>`;
+  });
   renderData += "</div>";
 
   return renderData;
 };
 
 const getSkills = () => {
-  let renderData = `<div class="command-result">`;
+  let renderData = `<div class="command-result"><dl>`;
+  languages = ["Python", "Go", "JavaScript"];
+  tools = ["Git", "GitHub", "Bazel", "Protocol Buffers", "Cassandra", "React"];
 
-  skills.forEach((skill) => {
-    renderData += `<li class="data-li">${skill.title}</li>`;
+  renderData += `<dt>Languages</dt>`;
+  languages.forEach((language) => {
+    renderData += `<dd class="data-li">${language}</dd>`;
   });
-  renderData += "</div>";
 
-  return renderData;
-};
-
-const getProjects = () => {
-  let renderData = `<div class="command-result"><table class="data-table">`;
-
-  projects.forEach((project) => {
-    renderData += `<tr>
-    <th class="data-name-th"><a href="${project.url}" target="_blank" class="data-link">${project.title}</a></th>
-    <td class="data-description-td">${project.description}</td>
-  </tr>`;
+  renderData += `<dt>Tools/Frameworks</dt>`;
+  tools.forEach((tool) => {
+    renderData += `<dd class="data-li">${tool}</dd>`;
   });
-  renderData += "</table></div>";
+  renderData += "</dl></div>";
 
   return renderData;
 };
@@ -47,23 +40,15 @@ const getContact = () => {
   const contacts = [
     {
       contactTitle: "email",
-      contactPlace: email,
+      contactPlace: "kiphenglim@gmail.com",
     },
     {
       contactTitle: "github",
-      contactPlace: "@BrijenMakwana",
+      contactPlace: "github.com/kiphenglim",
     },
     {
-      contactTitle: "hashnode",
-      contactPlace: "brijen.hashnode.dev",
-    },
-    {
-      contactTitle: "instagram",
-      contactPlace: "I am not dependent on the approval of others.",
-    },
-    {
-      contactTitle: "twitter",
-      contactPlace: "No time to meddle in other people's lives",
+      contactTitle: "linkedin",
+      contactPlace: "https://linkedin.com/in/kiphenglim",
     },
   ];
 
@@ -96,12 +81,8 @@ const getHelp = () => {
       description: "Want to say something?",
     },
     {
-      command: "clear",
+      command: "clear (^L)",
       description: "Clears the terminal of all output",
-    },
-    {
-      command: "cmd/ctrl + k",
-      description: "Keyboard shortcut to clear the terminal",
     },
   ];
 
@@ -116,7 +97,6 @@ const getHelp = () => {
 const getPortfolio = () => {
   whoAmISectionHTML = getRoles();
   skillsSectionHTML = getSkills();
-  projectsSectionHTML = getProjects();
   contactSectionHTML = getContact();
   helpSectionHTML = getHelp();
 };
@@ -126,7 +106,6 @@ getPortfolio();
 export {
   whoAmISectionHTML,
   skillsSectionHTML,
-  projectsSectionHTML,
   contactSectionHTML,
   helpSectionHTML,
 };
