@@ -3,35 +3,20 @@
 - [Overview](#overview)
 - [Screenshot](#screenshot)
 - [Links](#links)
-- [Built with](#Built-with)
+- [Attributions](#attributions)
 
 ## Overview
 
-- This is not your typical GUI portfolio website. Instead, you can access my information via a command line interface.
+- A terminal-like interface for accessing basic information about myself :)
 - You can type 'help' command to view all available command you can use.
-- By inputting different commands, you can learn a lot about me, including who I am, my qualifications, the projects I've worked on, my contact information, and a lot more.
-- You can use 'website' command to view my GUI portfolio website.
-- I have created this project with HTML, CSS and vanilla Javascript.
-
-## Screenshot
-
-![](./assets/screenshots/preview_1.png)
-![](./assets/screenshots/preview_2.png)
-![](./assets/screenshots/preview_3.png)
-![](./assets/screenshots/preview_4.png)
-![](./assets/screenshots/preview_5.png)
-![](./assets/screenshots/preview_6.png)
+- Written with basic HTML, CSS and JavaScript.
 
 ## Links
 
-- Live Site URL: [https://brijenmakwanacmd.vercel.app/](https://brijenmakwanacmd.vercel.app/)
-
-## Built with
-
-- HTML
-- CSS
-- Javascript
-- Sanity.io API
+- Live Site URL: [https://www.kiphenglim.com](https://www.kiphenglim.com)
 
 ## Attributions
+
 - Heavily inspired by [Brijen Makwana's Terminal Portfolio project](https://github.com/BrijenMakwana/terminal-portfolio)
+- [ASCII Art Text Generator](https://budavariam.github.io/asciiart-text/)
+- Favicon from [ABC Letters by shohanur.rahman13](https://www.flaticon.com/packs/abc-letters-18258511) on flaticon.com
