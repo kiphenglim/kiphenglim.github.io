@@ -33,14 +33,14 @@ const getRoles = () => {
       ],
     },
   ];
-  let renderData = `<div class="command-result">`;
+  let renderData = `<div class="command-result"><dl>`;
   about.forEach((item) => {
     renderData += `<dt class="data-dt">${item.aboutTitle}<dt>`;
     item.aboutSection.forEach((bullet) => {
-      renderData += `<dd class="data-dd"> — ${item.aboutSection}</dd>`;
+      renderData += `<dd class="data-dd"> — ${bullet}</dd>`;
     });
   });
-  renderData += "</div>";
+  renderData += "</dl></div>";
 
   return renderData;
 };
@@ -62,7 +62,7 @@ const getSkills = () => {
     renderData += `<dd class="data-dd">${language}</dd>`;
   });
 
-  renderData += `<dt  class="data-dt>Tools/Frameworks</dt>`;
+  renderData += `<dt class="data-dt">Tools/Frameworks</dt>`;
   tools.forEach((tool) => {
     renderData += `<dd class="data-dd"> — ${tool}</dd>`;
   });
