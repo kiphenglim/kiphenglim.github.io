@@ -1,4 +1,8 @@
-let whoAmISectionHTML, skillsSectionHTML, contactSectionHTML, helpSectionHTML;
+let whoAmISectionHTML,
+  skillsSectionHTML,
+  contactSectionHTML,
+  likesSectionHTML,
+  helpSectionHTML;
 
 const getRoles = () => {
   const about = [
@@ -111,25 +115,76 @@ const getContact = () => {
   return renderData;
 };
 
+const getLikes = () => {
+  let renderData = `<div class="command-result"><dl>`;
+  const likes = [
+    {
+      topic: "Programming languages",
+      likes: "Go, Julia",
+      dislikes: "Javascript",
+    },
+    {
+      topic: "Linux commands",
+      likes: "man, history, ripgrep",
+      dislikes: "2>&1, tar",
+    },
+    {
+      topic: "Editors",
+      likes: "Zed, Emacs",
+      dislikes: "Nano",
+    },
+    {
+      topic: "Shell flavours",
+      likes: "Zsh",
+      dislikes: "Powershell",
+    },
+    {
+      topic: "Regular Expression syntax",
+      likes: "negative lookaheads",
+      dislikes: "also negative lookaheads",
+    },
+    {
+      topic: "*",
+      likes: "cats, hot pot, cold weather",
+      dislikes: "lukewarm water, poor colour contrast, slow walkers",
+    },
+  ];
+
+  likes.forEach((like) => {
+    renderData += `<dt class="data-dt">${like.topic}<dt>
+    <dd class="data-dd">
+      Likes: ${like.likes}
+      Dislikes: ${like.dislikes}
+    </dd>`;
+  });
+  renderData += "</dl></div>";
+
+  return renderData;
+};
+
 const getHelp = () => {
   let renderData = `<div class="command-result"><dl>`;
 
   const availableCommands = [
     {
       command: "whoami",
-      description: "What I do",
+      description: "About me",
     },
     {
       command: "skills",
-      description: "What tech stacks I use",
+      description: "Tech stack",
     },
     {
       command: "contact",
-      description: "Want to say something?",
+      description: "Reach out",
+    },
+    {
+      command: "likes",
+      description: "Likes and dislikes",
     },
     {
       command: "clear (^L)",
-      description: "Clears the terminal of all output",
+      description: "Clear terminal",
     },
   ];
 
@@ -145,6 +200,7 @@ const getPortfolio = () => {
   whoAmISectionHTML = getRoles();
   skillsSectionHTML = getSkills();
   contactSectionHTML = getContact();
+  likesSectionHTML = getLikes();
   helpSectionHTML = getHelp();
 };
 
@@ -154,5 +210,6 @@ export {
   whoAmISectionHTML,
   skillsSectionHTML,
   contactSectionHTML,
+  likesSectionHTML,
   helpSectionHTML,
 };
