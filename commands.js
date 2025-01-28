@@ -15,7 +15,7 @@ const getRoles = () => {
       aboutSection: [
         "Roles: Infrastructure/backend on actively scaling teams",
         "Languages: Go, Rust, Julia",
-        "Technologies: Kubernetes, AWS/GCP, Cassandra, ScyllaDB",
+        "Technologies: Kubernetes, AWS/GCP, Databases (Cassandra, ScyllaDB, Redis)",
       ],
     },
     {
@@ -47,7 +47,14 @@ const getRoles = () => {
 
 const getSkills = () => {
   let renderData = `<div class="command-result"><dl>`;
-  const languages = ["Python", "Go", "JavaScript"];
+  const languages = [
+    "Python",
+    "Go",
+    "Shell (Bash/Zsh)",
+    "C++",
+    "Java",
+    "JavaScript",
+  ];
   const tools = [
     "Git",
     "GitHub",
@@ -55,6 +62,7 @@ const getSkills = () => {
     "Protocol Buffers",
     "Cassandra",
     "React",
+    "Bootstrap",
   ];
 
   renderData += `<dt class="data-dt">Languages</dt>`;
