@@ -144,7 +144,7 @@ const getLikes = () => {
       dislikes: "also negative lookaheads",
     },
     {
-      topic: "*",
+      topic: ".*",
       likes: "cats, hot pot, cold weather",
       dislikes: "lukewarm water, poor colour contrast, slow walkers",
     },
@@ -154,6 +154,8 @@ const getLikes = () => {
     renderData += `<dt class="data-dt">${like.topic}<dt>
     <dd class="data-dd">
       Likes: ${like.likes}
+    </dd>;
+    <dd class="data-dd">
       Dislikes: ${like.dislikes}
     </dd>`;
   });
