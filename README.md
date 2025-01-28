@@ -18,5 +18,6 @@
 ## Attributions
 
 - Heavily inspired by [Brijen Makwana's Terminal Portfolio project](https://github.com/BrijenMakwana/terminal-portfolio)
+- Colour theme from [Nord](https://github.com/nordtheme/nord)
 - [ASCII Art Text Generator](https://budavariam.github.io/asciiart-text/)
 - Favicon from [ABC Letters by shohanur.rahman13](https://www.flaticon.com/packs/abc-letters-18258511) on flaticon.com
