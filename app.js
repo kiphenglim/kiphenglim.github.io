@@ -2,6 +2,7 @@ import {
   whoAmISectionHTML,
   skillsSectionHTML,
   contactSectionHTML,
+  likesSectionHTML,
   helpSectionHTML,
 } from "./commands.js";
 
@@ -89,6 +90,10 @@ const executeCommand = () => {
       break;
     case "contact":
       showCommandOutput(contactSectionHTML);
+      addCommandToHistory();
+      break;
+    case "likes":
+      showCommandOutput(likesSectionHTML);
       addCommandToHistory();
       break;
     case "clear":
