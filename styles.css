@@ -62,7 +62,7 @@ body {
 }
 
 .ascii-name {
-    color: #fbcb0a;
+    color: var(--nord6);
     font-size: 0.7vw;
     margin-top: 15px;
 }
