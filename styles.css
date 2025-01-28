@@ -100,10 +100,11 @@ body {
     border: none;
     outline: none;
     background-color: transparent;
-    color: var(--nord9);
+    color: var(--nord6);
     font-weight: 400;
     font-size: 16px;
     margin-left: 10px;
+    margin-top: 5px;
 }
 
 .input-text {
@@ -116,8 +117,6 @@ body {
 }
 
 .data-dt {
-    font-size: 17px;
-    font-weight: 600;
     margin-top: 10px;
     text-transform: lowercase;
     color: var(--nord8);
