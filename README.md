@@ -1,19 +1,8 @@
-## Table of contents
-
-- [Overview](#overview)
-- [Screenshot](#screenshot)
-- [Links](#links)
-- [Attributions](#attributions)
-
-## Overview
+## About
 
 - A terminal-like interface for accessing basic information about myself :)
 - You can type 'help' command to view all available command you can use.
 - Written with basic HTML, CSS and JavaScript.
-
-## Links
-
-- Live Site URL: [https://www.kiphenglim.com](https://www.kiphenglim.com)
 
 ## Attributions
 
