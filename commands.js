@@ -154,7 +154,7 @@ const getLikes = () => {
     renderData += `<dt class="data-dt">${like.topic}<dt>
     <dd class="data-dd">
       Likes: ${like.likes}
-    </dd>;
+    </dd>
     <dd class="data-dd">
       Dislikes: ${like.dislikes}
     </dd>`;
